@@ -1,9 +1,11 @@
-# COMPSCI 742 Assignment 2 — Rui Reproducibility Pilot
+# COMPSCI 742 Assignment 2 — Reproducibility Pilot
 
 ## Project status
 
-This repository contains Rui's independent development and
-reproducibility pilot for COMPSCI 742 Assignment 2.
+This repository is a personal working environment supporting the
+COMPSCI 742 Assignment 2 group project. It is used to independently
+validate the experimental workflow and produce reproducible components
+for later integration into the team repository.
 
 It is intended to validate the complete experimental workflow on a
 small development sample before the methodology is frozen or the
