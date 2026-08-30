@@ -1,0 +1,16 @@
+name: compsci742-a2
+channels:
+  - defaults
+dependencies:
+  - python=3.11
+  - matplotlib
+  - seaborn
+  - jupyterlab
+  - pandas
+  - statsmodels
+  - pyarrow
+  - ipykernel
+  - numpy
+  - scipy
+  - scikit-learn
+prefix: /opt/anaconda3/envs/compsci742-a2
