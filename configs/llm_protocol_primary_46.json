@@ -1,0 +1,55 @@
+{
+  "evaluation_inputs": {
+    "conditions": [
+      "structured",
+      "deterministic_text"
+    ],
+    "paired_records": true,
+    "record_count": 200,
+    "same_canonical_payload_required": true
+  },
+  "feature_set": {
+    "feature_config_path": "configs/feature_set_primary_46.json",
+    "feature_config_sha256": "15a41ad4cb2625c87d7ff9684c19d5209a6bebce0b1ac8564c3f1f6fd2a93521",
+    "feature_count": 46,
+    "feature_set_id": "primary_46"
+  },
+  "information_controls": {
+    "attack_field_in_model_input": false,
+    "class_balance_provided": false,
+    "dataset_identity_provided": false,
+    "ground_truth_loaded_during_inference": false,
+    "label_field_in_model_input": false,
+    "sample_id_in_model_input": false,
+    "thresholds_or_normal_ranges_provided": false,
+    "worked_examples_provided": false
+  },
+  "instructions": {
+    "record_closing_delimiter": "</network_flow_record>",
+    "record_opening_delimiter": "<network_flow_record>",
+    "system_instruction": "You are evaluating a single network-flow record for a controlled binary anomaly-detection experiment.\n\nClassify the record as exactly one of the following:\n- Benign: normal, non-attack network traffic.\n- DoS: denial-of-service attack traffic associated with attempts to exhaust resources or degrade service availability.\n\nUse only the feature names and observed values supplied in the record. Do not assume access to a hidden label, dataset identity, collection source, class balance, external lookup, normal-value threshold, or additional feature definition.\n\nReturn exactly five distinct cited features, ranked from most influential to least influential in your decision. Copy each feature name and observed value exactly as supplied. Give one concise rationale for each cited feature based only on the supplied record.\n\nReturn only an object conforming to the required JSON schema. Do not include Markdown, code fences or text outside the JSON object."
+  },
+  "protocol_status": "provider_independent_locked",
+  "protocol_version": "0.1.0",
+  "provider_specific_settings": {
+    "note": "Provider, model identifier and supported inference parameters must be verified and recorded before any API call.",
+    "status": "not_yet_locked"
+  },
+  "response_policy": {
+    "distinct_feature_names_required": true,
+    "exact_feature_name_copy_required": true,
+    "exact_observed_value_copy_required": true,
+    "required_citation_count": 5,
+    "schema_content_sha256": "093169c2091cf3ac08f90501f2d02c30396848c4c5dde30c242a9a00ecd2ae63",
+    "schema_path": "configs/llm_output_schema.json",
+    "self_reported_confidence_included": false
+  },
+  "task": {
+    "allowed_labels": [
+      "Benign",
+      "DoS"
+    ],
+    "decision_mode": "forced_binary_classification",
+    "name": "binary_network_flow_anomaly_detection"
+  }
+}

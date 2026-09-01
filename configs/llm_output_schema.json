@@ -1,0 +1,52 @@
+{
+  "name": "network_flow_binary_assessment",
+  "schema": {
+    "additionalProperties": false,
+    "properties": {
+      "cited_features": {
+        "description": "Exactly five feature citations ranked from most influential to least influential.",
+        "items": {
+          "additionalProperties": false,
+          "properties": {
+            "feature_name": {
+              "description": "A feature name copied exactly from the supplied record.",
+              "type": "string"
+            },
+            "observed_value": {
+              "description": "The corresponding value copied exactly from the supplied record.",
+              "type": "string"
+            },
+            "rationale": {
+              "description": "A concise explanation of how this supplied feature influenced the prediction.",
+              "minLength": 1,
+              "type": "string"
+            }
+          },
+          "required": [
+            "feature_name",
+            "observed_value",
+            "rationale"
+          ],
+          "type": "object"
+        },
+        "maxItems": 5,
+        "minItems": 5,
+        "type": "array"
+      },
+      "predicted_label": {
+        "description": "The forced binary classification for the supplied network-flow record.",
+        "enum": [
+          "Benign",
+          "DoS"
+        ],
+        "type": "string"
+      }
+    },
+    "required": [
+      "predicted_label",
+      "cited_features"
+    ],
+    "type": "object"
+  },
+  "strict": true
+}
