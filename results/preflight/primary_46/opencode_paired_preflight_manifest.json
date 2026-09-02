@@ -1,0 +1,59 @@
+{
+  "artifact_type": "paired_preflight_manifest",
+  "artifact_version": "0.1.0",
+  "backend": {
+    "auto_approval": false,
+    "empty_temporary_directory": true,
+    "files_attached": false,
+    "maximum_model_output_tokens_supplied": false,
+    "model_route": "uoa/MiniMax-M3",
+    "name": "opencode",
+    "pure_mode": true,
+    "subprocess_timeout_seconds": 300,
+    "version": "1.18.22"
+  },
+  "canonical_payload_sha256": "31739eadb0a14b2490f0fc7e29c86935eef2c22151a3321417c5aec75bd31629",
+  "conditions": [
+    "structured",
+    "deterministic_text"
+  ],
+  "created_at_utc": "2026-09-02T22:50:14.891364+00:00",
+  "experiment_scope": "single_record_backend_preflight",
+  "feature_count": 46,
+  "feature_set_id": "primary_46",
+  "output_schema": {
+    "file_sha256": "1103a917ce1cad918ab4a94c5d94d8a0299400749ca9e03430c477e14b53831c",
+    "path": "configs/llm_output_schema.json"
+  },
+  "preflight_observation": {
+    "exact_rank_match_count": 0,
+    "interpretation_status": "technical_preflight_only",
+    "predicted_labels_agree": true,
+    "shared_cited_feature_count": 3,
+    "top_5_jaccard_similarity": 0.42857142857142855
+  },
+  "prompt_template": {
+    "deterministic_text_prompt_sha256": "577d3214b51eed9805ffb1291cc5643c6711e78b0f27189f3b03abb6cf20a75e",
+    "structured_prompt_sha256": "f49c1346affe94d3a4be85086cfc5f362c91bcbbfb992df059d960cb9c999ff2",
+    "version": "0.1.0"
+  },
+  "protocol": {
+    "file_sha256": "3ff01d1b7fa91f0b38d03a4324034e26e71c3288b74cd3c9a80e59f8a71e7c8d",
+    "path": "configs/llm_protocol_primary_46.json"
+  },
+  "request_count": 2,
+  "result_file": {
+    "path": "results/preflight/primary_46/opencode_paired_preflight_results.jsonl",
+    "sha256": "556dd921b69ed51d8edf339adb67845e4ca891155d856496e1e9e517d752a174"
+  },
+  "sample_count": 1,
+  "sample_id": "pilot_001",
+  "validation": {
+    "both_grounding_valid": true,
+    "both_overall_valid": true,
+    "both_requests_completed": true,
+    "both_return_codes_zero": true,
+    "both_schema_valid": true,
+    "ground_truth_loaded": false
+  }
+}
