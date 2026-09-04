@@ -1,0 +1,117 @@
+{
+  "artifact_type": "independently_validated_frozen_inference_dataset",
+  "exclusion_evidence": {
+    "automatic_retry_used": false,
+    "deterministic_text_schema_invalid_count": 1,
+    "deterministic_text_timeout_count": 19,
+    "invalid_predictions_exposed_for_analysis": false,
+    "schema_invalid_count": 1,
+    "structured_timeout_count": 21,
+    "timeout_count": 40
+  },
+  "feature_set_id": "primary_46",
+  "frozen_inference_dataset": {
+    "contains_all_execution_evidence": true,
+    "contains_analysis_eligibility_fields": true,
+    "path": "results/validation/primary_46/opencode_frozen_inference.jsonl",
+    "record_count": 400,
+    "sample_count": 200,
+    "serialization": "utf-8 JSON Lines; sorted keys; compact separators",
+    "sha256": "773761e420b06b6b19057c930da57c33bbe29d063d2a04767036eba87806efe5",
+    "size_bytes": 1978434
+  },
+  "notebook": "08_llm_response_validation.ipynb",
+  "research_boundary": {
+    "failed_evidence_deleted": false,
+    "model_request_retried": false,
+    "model_response_repaired": false,
+    "network_request_made": false,
+    "private_ground_truth_loaded": false
+  },
+  "response_coverage": {
+    "analysis_eligible_condition_count": 359,
+    "both_conditions_valid_sample_count": 178,
+    "deterministic_text_analysis_eligible_count": 180,
+    "deterministic_text_planned_count": 200,
+    "exactly_one_condition_valid_sample_count": 3,
+    "excluded_condition_count": 41,
+    "neither_condition_valid_sample_count": 19,
+    "paired_analysis_eligible_sample_count": 178,
+    "retained_condition_record_count": 400,
+    "retained_sample_count": 200,
+    "structured_analysis_eligible_count": 179,
+    "structured_planned_count": 200
+  },
+  "source_artifacts": {
+    "deterministic_text_representation": {
+      "path": "data/interim/representations/primary_46/deterministic_text.jsonl",
+      "sha256": "e47549bc5c5ae08d170e46c43b223afdaae6d3aaef71064d0abea42f230b940d",
+      "size_bytes": 410628
+    },
+    "equivalence_validation": {
+      "path": "data/interim/representations/primary_46/equivalence_validation.csv",
+      "sha256": "a3c036f068e2dcc2a502b25ac34c390daa6c20f0c0bcc30a41f1697d62c3c1fc",
+      "size_bytes": 10276
+    },
+    "formal_batch_manifest": {
+      "path": "results/inference/primary_46/opencode_batch_manifest.json",
+      "sha256": "994e6a1b69c88ea78475aafe7224af4a53916d8362e004d77c3e7c0350d299a5",
+      "size_bytes": 135424
+    },
+    "formal_batch_results": {
+      "path": "results/inference/primary_46/opencode_batch_results.jsonl",
+      "sha256": "fdca52ad78ba136794e7a4a9d5bc684788edcdae180f9621ea95cced5dc97459",
+      "size_bytes": 1466663
+    },
+    "llm_output_schema": {
+      "path": "configs/llm_output_schema.json",
+      "sha256": "1103a917ce1cad918ab4a94c5d94d8a0299400749ca9e03430c477e14b53831c",
+      "size_bytes": 1482
+    },
+    "llm_protocol": {
+      "path": "configs/llm_protocol_primary_46.json",
+      "sha256": "3ff01d1b7fa91f0b38d03a4324034e26e71c3288b74cd3c9a80e59f8a71e7c8d",
+      "size_bytes": 2816
+    },
+    "representation_manifest": {
+      "path": "data/interim/representations/primary_46/manifest.json",
+      "sha256": "c653d611be838dc7dfb98b04ab22a390e61a38eed1c5ddf27694949a98a89661",
+      "size_bytes": 1745
+    },
+    "structured_representation": {
+      "path": "data/interim/representations/primary_46/structured.jsonl",
+      "sha256": "a74fdbb25e8d24fb9afd06d13982f19689a04685436a65b25587e84b7a767fa9",
+      "size_bytes": 462428
+    }
+  },
+  "source_integrity": {
+    "aggregate_payloads_matched_checkpoints": 400,
+    "execution_contract_hashes_rebuilt_and_matched": 400,
+    "formal_batch_record_count": 400,
+    "formal_checkpoint_file_count": 400,
+    "formal_checkpoint_hashes_matched": 400,
+    "locked_artifact_count": 7,
+    "locked_artifact_hashes_matched": 7,
+    "ordered_request_positions_verified": true,
+    "paired_sample_count": 200,
+    "prompt_hashes_rebuilt_and_matched": 400,
+    "sample_ids_absent_from_all_prompts": true,
+    "stored_validation_flags_all_reproduced": true,
+    "unique_request_key_count": 400
+  },
+  "validation_completed_at_utc": "2026-09-04T01:58:20.990041+00:00",
+  "validation_contract": {
+    "allowed_predicted_labels": [
+      "Benign",
+      "DoS"
+    ],
+    "citation_feature_names_must_be_distinct": true,
+    "citation_feature_names_must_be_supplied": true,
+    "condition_analysis_requires_valid_response": true,
+    "observed_values_must_match_exactly": true,
+    "paired_analysis_requires_both_conditions_valid": true,
+    "required_citation_count": 5,
+    "response_schema": "locked_llm_output_schema",
+    "timeouts_are_not_classification_predictions": true
+  }
+}
