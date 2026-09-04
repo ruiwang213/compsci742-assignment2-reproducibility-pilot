@@ -1,0 +1,3328 @@
+{
+  "backend": {
+    "auto_approval": false,
+    "automatic_retry_used": false,
+    "empty_temporary_directory_per_request": true,
+    "event_format": "json",
+    "files_attached": false,
+    "maximum_concurrent_requests": 3,
+    "maximum_model_output_tokens_supplied": false,
+    "model_route": "uoa/MiniMax-M3",
+    "name": "opencode",
+    "prompt_template_version": "0.1.0",
+    "pure_mode": true,
+    "subprocess_timeout_seconds": 300,
+    "version": "1.18.22"
+  },
+  "checkpoint_inventory": [
+    {
+      "condition": "structured",
+      "record_index": 0,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0000__structured.json",
+      "request_plan_position": 0,
+      "sample_id": "pilot_001",
+      "sha256": "d4ac9682779436827cfe2e49564492ed9f59988eeccb0d4b2c871444e944538e"
+    },
+    {
+      "condition": "deterministic_text",
+      "record_index": 0,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0000__deterministic_text.json",
+      "request_plan_position": 1,
+      "sample_id": "pilot_001",
+      "sha256": "61f245bfc503e302418f315eb2bdb7bb2d2e893151c9f5202752e628ff340d4a"
+    },
+    {
+      "condition": "deterministic_text",
+      "record_index": 1,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0001__deterministic_text.json",
+      "request_plan_position": 2,
+      "sample_id": "pilot_002",
+      "sha256": "dad0a2d1668c453b646c8c9ef705fdf25898005cd3d5e9ac9004cfbff3af4838"
+    },
+    {
+      "condition": "structured",
+      "record_index": 1,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0001__structured.json",
+      "request_plan_position": 3,
+      "sample_id": "pilot_002",
+      "sha256": "d6e9a3323f977131bac5a63b2d72f296bde460091b9f683a83327087fef44d4c"
+    },
+    {
+      "condition": "structured",
+      "record_index": 2,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0002__structured.json",
+      "request_plan_position": 4,
+      "sample_id": "pilot_003",
+      "sha256": "b01b59e6f8710b0457fcaa2c77b58c0cb58a8ae447822346471493abb6036d07"
+    },
+    {
+      "condition": "deterministic_text",
+      "record_index": 2,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0002__deterministic_text.json",
+      "request_plan_position": 5,
+      "sample_id": "pilot_003",
+      "sha256": "8ad613832b44262b3676e2d6b9ebd992442484fac4feef21a1bcd32a38b3db53"
+    },
+    {
+      "condition": "deterministic_text",
+      "record_index": 3,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0003__deterministic_text.json",
+      "request_plan_position": 6,
+      "sample_id": "pilot_004",
+      "sha256": "24a523008018209e54657522f1e47bb59bbe6ffb1cc36e24959b2defe4e9a8d7"
+    },
+    {
+      "condition": "structured",
+      "record_index": 3,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0003__structured.json",
+      "request_plan_position": 7,
+      "sample_id": "pilot_004",
+      "sha256": "10f9e2af80c8431986d4aaa5a1c3bb836d5fd57ae92938f601a1b959252399a5"
+    },
+    {
+      "condition": "structured",
+      "record_index": 4,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0004__structured.json",
+      "request_plan_position": 8,
+      "sample_id": "pilot_005",
+      "sha256": "0fc08fd9531c948db8fcae01c81eaa6a68dd98d7bc34832276a38c71ef058c8a"
+    },
+    {
+      "condition": "deterministic_text",
+      "record_index": 4,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0004__deterministic_text.json",
+      "request_plan_position": 9,
+      "sample_id": "pilot_005",
+      "sha256": "9e7e9a103d09345d7e2c2e591a7839ed91c0e19a5736ecde275e9880ea6c68ac"
+    },
+    {
+      "condition": "deterministic_text",
+      "record_index": 5,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0005__deterministic_text.json",
+      "request_plan_position": 10,
+      "sample_id": "pilot_006",
+      "sha256": "6cab2008eb3035c8305acd58bf94aaa07272392fc797fe7a17bc8228bb59a50c"
+    },
+    {
+      "condition": "structured",
+      "record_index": 5,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0005__structured.json",
+      "request_plan_position": 11,
+      "sample_id": "pilot_006",
+      "sha256": "63e992cb9371c30b7299d07a41c7a894835b829e0d775506ccdfc9e3c684fe46"
+    },
+    {
+      "condition": "structured",
+      "record_index": 6,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0006__structured.json",
+      "request_plan_position": 12,
+      "sample_id": "pilot_007",
+      "sha256": "4b315c2e4603d636bcbc079ca7837857dd341ffa2746972269ed27637f19062b"
+    },
+    {
+      "condition": "deterministic_text",
+      "record_index": 6,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0006__deterministic_text.json",
+      "request_plan_position": 13,
+      "sample_id": "pilot_007",
+      "sha256": "3791eb005c1076d90568d10e12617afe8c0a7b5440b4245111a3993515c17c10"
+    },
+    {
+      "condition": "deterministic_text",
+      "record_index": 7,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0007__deterministic_text.json",
+      "request_plan_position": 14,
+      "sample_id": "pilot_008",
+      "sha256": "43b91d59352503337a4a8d314fb3e2587ed87482e11983dbc14d20547d6b3666"
+    },
+    {
+      "condition": "structured",
+      "record_index": 7,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0007__structured.json",
+      "request_plan_position": 15,
+      "sample_id": "pilot_008",
+      "sha256": "9efcd7b40d5679b423c46ed760917f87f18fc4de228062aabee5d8137a17a0e4"
+    },
+    {
+      "condition": "structured",
+      "record_index": 8,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0008__structured.json",
+      "request_plan_position": 16,
+      "sample_id": "pilot_009",
+      "sha256": "edade6fa8ae5d5997585f2dc26ff1550368cc882d90582692cfe17c1efea33dd"
+    },
+    {
+      "condition": "deterministic_text",
+      "record_index": 8,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0008__deterministic_text.json",
+      "request_plan_position": 17,
+      "sample_id": "pilot_009",
+      "sha256": "3c1af97d1ddfba1edfddbbdbed7e7e0abfb81a0e45d244ecbbee05a3adcff97d"
+    },
+    {
+      "condition": "deterministic_text",
+      "record_index": 9,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0009__deterministic_text.json",
+      "request_plan_position": 18,
+      "sample_id": "pilot_010",
+      "sha256": "7a930f3667fe2e580925c8eb8d5a2675f1bc566f4710d757a2ec60043c66ad37"
+    },
+    {
+      "condition": "structured",
+      "record_index": 9,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0009__structured.json",
+      "request_plan_position": 19,
+      "sample_id": "pilot_010",
+      "sha256": "116044a707bf4fd62bfc69d1a8038369751adae6656d7ae973146830fd40a6b9"
+    },
+    {
+      "condition": "structured",
+      "record_index": 10,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0010__structured.json",
+      "request_plan_position": 20,
+      "sample_id": "pilot_011",
+      "sha256": "c9fa6fa2b2b448ecfa2cea4e98dacb8e69c0e3a50cab6206d9ca240b1329066b"
+    },
+    {
+      "condition": "deterministic_text",
+      "record_index": 10,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0010__deterministic_text.json",
+      "request_plan_position": 21,
+      "sample_id": "pilot_011",
+      "sha256": "b035be0f1f36acd1132e05a2ece54a3b5b66eed7927d19cfa601dab1c41b3cf4"
+    },
+    {
+      "condition": "deterministic_text",
+      "record_index": 11,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0011__deterministic_text.json",
+      "request_plan_position": 22,
+      "sample_id": "pilot_012",
+      "sha256": "63697327bf0c4e76415b55de405823b6dd1f18c4bea2506a0dc5ebacb03c16cd"
+    },
+    {
+      "condition": "structured",
+      "record_index": 11,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0011__structured.json",
+      "request_plan_position": 23,
+      "sample_id": "pilot_012",
+      "sha256": "57f84d209130578f3b4829a00d3cb273a481a784a4412a0f90f2ee8d53db1e2f"
+    },
+    {
+      "condition": "structured",
+      "record_index": 12,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0012__structured.json",
+      "request_plan_position": 24,
+      "sample_id": "pilot_013",
+      "sha256": "bf0c4949f1d3ba080062281c199463e239acca4031a8362cf2c4f9ec327658df"
+    },
+    {
+      "condition": "deterministic_text",
+      "record_index": 12,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0012__deterministic_text.json",
+      "request_plan_position": 25,
+      "sample_id": "pilot_013",
+      "sha256": "756dc97c95531a2d5a98d0b900ecb35c625a424d0d9f0ec8b4a7dfacbffee68c"
+    },
+    {
+      "condition": "deterministic_text",
+      "record_index": 13,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0013__deterministic_text.json",
+      "request_plan_position": 26,
+      "sample_id": "pilot_014",
+      "sha256": "5a4886a302b34195ee843b2bc910ba168dc141fe69b59009fa8a31e5754a2ea9"
+    },
+    {
+      "condition": "structured",
+      "record_index": 13,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0013__structured.json",
+      "request_plan_position": 27,
+      "sample_id": "pilot_014",
+      "sha256": "d11b95aa2a50f0e087110e63eab088195b89654dc0f97192367cbba553e8d033"
+    },
+    {
+      "condition": "structured",
+      "record_index": 14,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0014__structured.json",
+      "request_plan_position": 28,
+      "sample_id": "pilot_015",
+      "sha256": "3cea3c1baefdca364a6bc5f3c5db24d564cc942873b5f6db409271c296ca3833"
+    },
+    {
+      "condition": "deterministic_text",
+      "record_index": 14,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0014__deterministic_text.json",
+      "request_plan_position": 29,
+      "sample_id": "pilot_015",
+      "sha256": "8ad57eca3862378fb7f4caf5398ad7b7f888ac90074b5e82610c09f35589c059"
+    },
+    {
+      "condition": "deterministic_text",
+      "record_index": 15,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0015__deterministic_text.json",
+      "request_plan_position": 30,
+      "sample_id": "pilot_016",
+      "sha256": "3c7a1bffcd6be1169cd11dc7e89c3231e941efa939f1bc99f8fe1aefe160d29f"
+    },
+    {
+      "condition": "structured",
+      "record_index": 15,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0015__structured.json",
+      "request_plan_position": 31,
+      "sample_id": "pilot_016",
+      "sha256": "dd499604408db014eeee7fd1a59ebcc8e48c46b4cecbc40a3d711da80c8cce2f"
+    },
+    {
+      "condition": "structured",
+      "record_index": 16,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0016__structured.json",
+      "request_plan_position": 32,
+      "sample_id": "pilot_017",
+      "sha256": "2937f4e94dce9f2b6a7356fa1527df003b564df26339db77ab1db11aae07a417"
+    },
+    {
+      "condition": "deterministic_text",
+      "record_index": 16,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0016__deterministic_text.json",
+      "request_plan_position": 33,
+      "sample_id": "pilot_017",
+      "sha256": "81144e72f638592c0a1d85ec6d14e4c8070abaec9442dc31500aa7b7c82b7400"
+    },
+    {
+      "condition": "deterministic_text",
+      "record_index": 17,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0017__deterministic_text.json",
+      "request_plan_position": 34,
+      "sample_id": "pilot_018",
+      "sha256": "58ad2f631603dde89fcde89adf7b745ab0080edbf7120b520c866c8674ff29ad"
+    },
+    {
+      "condition": "structured",
+      "record_index": 17,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0017__structured.json",
+      "request_plan_position": 35,
+      "sample_id": "pilot_018",
+      "sha256": "d64c5e6e62947ef5ef381f6a950940d65e82ba8489518ffd0d48675e24de2324"
+    },
+    {
+      "condition": "structured",
+      "record_index": 18,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0018__structured.json",
+      "request_plan_position": 36,
+      "sample_id": "pilot_019",
+      "sha256": "c5e41559d58c0c429a2644658dd879ddf363569633bfc61bc0a5a6c3021f1394"
+    },
+    {
+      "condition": "deterministic_text",
+      "record_index": 18,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0018__deterministic_text.json",
+      "request_plan_position": 37,
+      "sample_id": "pilot_019",
+      "sha256": "86572b268545db5af9bf3e149dae1e535cde12792d25e62d79632f72f601f04c"
+    },
+    {
+      "condition": "deterministic_text",
+      "record_index": 19,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0019__deterministic_text.json",
+      "request_plan_position": 38,
+      "sample_id": "pilot_020",
+      "sha256": "33ac604c921d4c316194c911346163a808b3934e77effa9c36bee35e94f3994d"
+    },
+    {
+      "condition": "structured",
+      "record_index": 19,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0019__structured.json",
+      "request_plan_position": 39,
+      "sample_id": "pilot_020",
+      "sha256": "1f57104330e024007befe1ef1adfd6d0117c161c912dee68043f12a8a7759319"
+    },
+    {
+      "condition": "structured",
+      "record_index": 20,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0020__structured.json",
+      "request_plan_position": 40,
+      "sample_id": "pilot_021",
+      "sha256": "474a414516d2f34916a2932363576fa119efe6910d5bdbf37a7531c9730e4873"
+    },
+    {
+      "condition": "deterministic_text",
+      "record_index": 20,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0020__deterministic_text.json",
+      "request_plan_position": 41,
+      "sample_id": "pilot_021",
+      "sha256": "6c468678ecf2bc069489d93c1b918765a8a2e715e2d11e25ceecf95725e63fc7"
+    },
+    {
+      "condition": "deterministic_text",
+      "record_index": 21,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0021__deterministic_text.json",
+      "request_plan_position": 42,
+      "sample_id": "pilot_022",
+      "sha256": "cea3e152a108d88a3886e0e9fee7f4b6593aad60add40e8394f74fda02352de3"
+    },
+    {
+      "condition": "structured",
+      "record_index": 21,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0021__structured.json",
+      "request_plan_position": 43,
+      "sample_id": "pilot_022",
+      "sha256": "6f71d883806b4b7acfe18f28f86c0171bf7e05eead0a2470023600f03c3cb970"
+    },
+    {
+      "condition": "structured",
+      "record_index": 22,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0022__structured.json",
+      "request_plan_position": 44,
+      "sample_id": "pilot_023",
+      "sha256": "8b24aa970276f8d6211a0c58c65d9aa9165679d583dd4c597684449552e79f6e"
+    },
+    {
+      "condition": "deterministic_text",
+      "record_index": 22,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0022__deterministic_text.json",
+      "request_plan_position": 45,
+      "sample_id": "pilot_023",
+      "sha256": "d4b3897ff6399acd9152f352ed7052dff6cd9ce745b36016c9852e773aaaf31d"
+    },
+    {
+      "condition": "deterministic_text",
+      "record_index": 23,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0023__deterministic_text.json",
+      "request_plan_position": 46,
+      "sample_id": "pilot_024",
+      "sha256": "1d88505b35fbb6a128a42788c2312f950c5a7fc8eabf0a9aa07aa6d29a5682f7"
+    },
+    {
+      "condition": "structured",
+      "record_index": 23,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0023__structured.json",
+      "request_plan_position": 47,
+      "sample_id": "pilot_024",
+      "sha256": "63f2f5718353e7008577718379c0ab430858869cd0a0be47658f6a7540eb0cac"
+    },
+    {
+      "condition": "structured",
+      "record_index": 24,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0024__structured.json",
+      "request_plan_position": 48,
+      "sample_id": "pilot_025",
+      "sha256": "0f283d739fc5f64fa8df4a8ca19bee73bfc4505c7cee7d9f0811f2a08e01ae55"
+    },
+    {
+      "condition": "deterministic_text",
+      "record_index": 24,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0024__deterministic_text.json",
+      "request_plan_position": 49,
+      "sample_id": "pilot_025",
+      "sha256": "a540ca74c2cf03c8d40b4fbf24bd4431522d3a223a0b2dfdbb018faf54d9603b"
+    },
+    {
+      "condition": "deterministic_text",
+      "record_index": 25,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0025__deterministic_text.json",
+      "request_plan_position": 50,
+      "sample_id": "pilot_026",
+      "sha256": "8afd36970dbae8f83a38b3341e103b3259d4b3051c689c18ad7ab025e366358c"
+    },
+    {
+      "condition": "structured",
+      "record_index": 25,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0025__structured.json",
+      "request_plan_position": 51,
+      "sample_id": "pilot_026",
+      "sha256": "aa3d1a6e37e6f54d75da7f6173ea5f79035f7fd56a35bfb99845fd76b9960046"
+    },
+    {
+      "condition": "structured",
+      "record_index": 26,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0026__structured.json",
+      "request_plan_position": 52,
+      "sample_id": "pilot_027",
+      "sha256": "e31a2ba1650bf22468bfa9a194a6610050b7578ab26725134854af4901e0c30a"
+    },
+    {
+      "condition": "deterministic_text",
+      "record_index": 26,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0026__deterministic_text.json",
+      "request_plan_position": 53,
+      "sample_id": "pilot_027",
+      "sha256": "4d8f02d96979526e9665e0ef847da3f18ea2490064b77e363751afac0ac7ac55"
+    },
+    {
+      "condition": "deterministic_text",
+      "record_index": 27,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0027__deterministic_text.json",
+      "request_plan_position": 54,
+      "sample_id": "pilot_028",
+      "sha256": "c89188dba272f0b8c11ce2ffec4bb9665009a1fc47f6e73e12a3386e369dfd87"
+    },
+    {
+      "condition": "structured",
+      "record_index": 27,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0027__structured.json",
+      "request_plan_position": 55,
+      "sample_id": "pilot_028",
+      "sha256": "bc2e04d7c4253f544b6d1d41aa4c25222869e973262f150d77b2530733293a5b"
+    },
+    {
+      "condition": "structured",
+      "record_index": 28,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0028__structured.json",
+      "request_plan_position": 56,
+      "sample_id": "pilot_029",
+      "sha256": "910a139ff3fdb67ab250d485e20816d1f44678ad22644b9e7e98bccf16a4fd65"
+    },
+    {
+      "condition": "deterministic_text",
+      "record_index": 28,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0028__deterministic_text.json",
+      "request_plan_position": 57,
+      "sample_id": "pilot_029",
+      "sha256": "a9dda99110e402a55d55bf9862fa40d01148009a0b248ff8637a0b69ec67c84c"
+    },
+    {
+      "condition": "deterministic_text",
+      "record_index": 29,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0029__deterministic_text.json",
+      "request_plan_position": 58,
+      "sample_id": "pilot_030",
+      "sha256": "2c7acc66c6bc32f7932dd3cc07cb4726aff28b6a0478d0058d50d93e0ff155f2"
+    },
+    {
+      "condition": "structured",
+      "record_index": 29,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0029__structured.json",
+      "request_plan_position": 59,
+      "sample_id": "pilot_030",
+      "sha256": "9d8fdb912d638092062b0cc2cca91607c377ac8eff4a4725c9882448e8c2127c"
+    },
+    {
+      "condition": "structured",
+      "record_index": 30,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0030__structured.json",
+      "request_plan_position": 60,
+      "sample_id": "pilot_031",
+      "sha256": "7282d6a80fb5c674533664275d7c2099c2826f3a513922702c9be4685d3d190e"
+    },
+    {
+      "condition": "deterministic_text",
+      "record_index": 30,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0030__deterministic_text.json",
+      "request_plan_position": 61,
+      "sample_id": "pilot_031",
+      "sha256": "12c0792ff7619137890f6a4c608ce2a0b4e89d732ef246e991ee32f4ca458214"
+    },
+    {
+      "condition": "deterministic_text",
+      "record_index": 31,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0031__deterministic_text.json",
+      "request_plan_position": 62,
+      "sample_id": "pilot_032",
+      "sha256": "2f498238e28a71d0df537839fac8004fbe2106a4e93ca18685648fc0a185e2e8"
+    },
+    {
+      "condition": "structured",
+      "record_index": 31,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0031__structured.json",
+      "request_plan_position": 63,
+      "sample_id": "pilot_032",
+      "sha256": "32453bace14b1e3bd5a27fea19284721bf91c801dfc3815a4b017dc172568721"
+    },
+    {
+      "condition": "structured",
+      "record_index": 32,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0032__structured.json",
+      "request_plan_position": 64,
+      "sample_id": "pilot_033",
+      "sha256": "c4ceffb4d7194e7f3d5bdbdc2f99c9a023b74bc8d943a35280e3af58b96280f4"
+    },
+    {
+      "condition": "deterministic_text",
+      "record_index": 32,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0032__deterministic_text.json",
+      "request_plan_position": 65,
+      "sample_id": "pilot_033",
+      "sha256": "9d7fc666277b476d114c0c7ab82007f64ed1bf21b9f63d666fb7bea04e7690f4"
+    },
+    {
+      "condition": "deterministic_text",
+      "record_index": 33,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0033__deterministic_text.json",
+      "request_plan_position": 66,
+      "sample_id": "pilot_034",
+      "sha256": "fe90fb01d6eca32073d609565b2a5bd43803902af4148e61eff21c02180fd55f"
+    },
+    {
+      "condition": "structured",
+      "record_index": 33,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0033__structured.json",
+      "request_plan_position": 67,
+      "sample_id": "pilot_034",
+      "sha256": "177b9a64c00a51f2bdbfe26584f9b63df13edbe06d362100b572925b38ddd93b"
+    },
+    {
+      "condition": "structured",
+      "record_index": 34,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0034__structured.json",
+      "request_plan_position": 68,
+      "sample_id": "pilot_035",
+      "sha256": "b858f11c9e8edda6ec79d61b0eb57f2ca04cd899d649d6bc978bb0236b603e22"
+    },
+    {
+      "condition": "deterministic_text",
+      "record_index": 34,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0034__deterministic_text.json",
+      "request_plan_position": 69,
+      "sample_id": "pilot_035",
+      "sha256": "6efe4935d3461dd78b625e9dec11117591f5a8ead267daf68ab50093ef638781"
+    },
+    {
+      "condition": "deterministic_text",
+      "record_index": 35,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0035__deterministic_text.json",
+      "request_plan_position": 70,
+      "sample_id": "pilot_036",
+      "sha256": "e5da4aae6dae73158cfcc0fede13c2241bd70eee826301a7e5975ff9c7a9964f"
+    },
+    {
+      "condition": "structured",
+      "record_index": 35,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0035__structured.json",
+      "request_plan_position": 71,
+      "sample_id": "pilot_036",
+      "sha256": "0c89ee56f89e8ab12805f72f6d275ebc109d291bf86c00f8f4af2da78537f98f"
+    },
+    {
+      "condition": "structured",
+      "record_index": 36,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0036__structured.json",
+      "request_plan_position": 72,
+      "sample_id": "pilot_037",
+      "sha256": "6764281308009a2c6103bb9e784b6bc4e3dd2068f83241e1b3086cb2a5b07730"
+    },
+    {
+      "condition": "deterministic_text",
+      "record_index": 36,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0036__deterministic_text.json",
+      "request_plan_position": 73,
+      "sample_id": "pilot_037",
+      "sha256": "44d38d44c32a7492027fc5cf01f03a7552f0303420f69cf00684dde583d2a861"
+    },
+    {
+      "condition": "deterministic_text",
+      "record_index": 37,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0037__deterministic_text.json",
+      "request_plan_position": 74,
+      "sample_id": "pilot_038",
+      "sha256": "e96eaf76c24f345a80e62131b5ffbfdb1c9aa8b8249d9a4b9b722d47c6c25393"
+    },
+    {
+      "condition": "structured",
+      "record_index": 37,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0037__structured.json",
+      "request_plan_position": 75,
+      "sample_id": "pilot_038",
+      "sha256": "cbd274ccc85d43f1de89544d7f8414f9d79d4925fd5d8dd9e8c9838a62d40ce3"
+    },
+    {
+      "condition": "structured",
+      "record_index": 38,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0038__structured.json",
+      "request_plan_position": 76,
+      "sample_id": "pilot_039",
+      "sha256": "bbc487e73c32d67efc21b2e4e7af1db4317a917ca84ac290437225829b4b0414"
+    },
+    {
+      "condition": "deterministic_text",
+      "record_index": 38,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0038__deterministic_text.json",
+      "request_plan_position": 77,
+      "sample_id": "pilot_039",
+      "sha256": "5864e7a5eebaf0df44e6c0ea41dbaf633ad55fc7e429d29f03274c97f818d148"
+    },
+    {
+      "condition": "deterministic_text",
+      "record_index": 39,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0039__deterministic_text.json",
+      "request_plan_position": 78,
+      "sample_id": "pilot_040",
+      "sha256": "83c81fe298870294c22eb2cb103f9b54495e9e22b27bf3ae7c441ba6676fd37b"
+    },
+    {
+      "condition": "structured",
+      "record_index": 39,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0039__structured.json",
+      "request_plan_position": 79,
+      "sample_id": "pilot_040",
+      "sha256": "9391b807628924fb9d5ab6e7b625c7aa190e3ff67329596b246a986d9ce0e492"
+    },
+    {
+      "condition": "structured",
+      "record_index": 40,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0040__structured.json",
+      "request_plan_position": 80,
+      "sample_id": "pilot_041",
+      "sha256": "63aaf21a1c9227fdb7a557985420cbee040d37775f202a8804093c2976c2e111"
+    },
+    {
+      "condition": "deterministic_text",
+      "record_index": 40,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0040__deterministic_text.json",
+      "request_plan_position": 81,
+      "sample_id": "pilot_041",
+      "sha256": "abc069feb001f80b626aba8c1a392f66c5dddb6d923d5fdefc5f6de58ecbad74"
+    },
+    {
+      "condition": "deterministic_text",
+      "record_index": 41,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0041__deterministic_text.json",
+      "request_plan_position": 82,
+      "sample_id": "pilot_042",
+      "sha256": "f7ec8ae37aa67d3f19a18f2885d9f10937fd719c7d9dad661b7a07dd6350594e"
+    },
+    {
+      "condition": "structured",
+      "record_index": 41,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0041__structured.json",
+      "request_plan_position": 83,
+      "sample_id": "pilot_042",
+      "sha256": "b67ebee486e97b20b2cf2ce33fb30095c903ba0db9c156fa15c4cca2536379b6"
+    },
+    {
+      "condition": "structured",
+      "record_index": 42,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0042__structured.json",
+      "request_plan_position": 84,
+      "sample_id": "pilot_043",
+      "sha256": "9c5109c79ae950420112a2869f29618194243f564a5fa9719f71729fa5ac2295"
+    },
+    {
+      "condition": "deterministic_text",
+      "record_index": 42,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0042__deterministic_text.json",
+      "request_plan_position": 85,
+      "sample_id": "pilot_043",
+      "sha256": "d45972ab82d02543569e0b170ab6bd56afdbe956da7a38dbc2ad191bc2758ae9"
+    },
+    {
+      "condition": "deterministic_text",
+      "record_index": 43,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0043__deterministic_text.json",
+      "request_plan_position": 86,
+      "sample_id": "pilot_044",
+      "sha256": "6b9d75d287ef328f69bbcf7f09a0702bfd3a9d823bcc46ae7a2caf00d5dd8d55"
+    },
+    {
+      "condition": "structured",
+      "record_index": 43,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0043__structured.json",
+      "request_plan_position": 87,
+      "sample_id": "pilot_044",
+      "sha256": "7cf0be948b9096ea9b3ed8b3e17798a26b621a9c6e434a895eb4d231e80fe1d0"
+    },
+    {
+      "condition": "structured",
+      "record_index": 44,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0044__structured.json",
+      "request_plan_position": 88,
+      "sample_id": "pilot_045",
+      "sha256": "0d4b990c1522792831d541919dc52302a1bde5f2cf154a5905dd3fd742fcdb02"
+    },
+    {
+      "condition": "deterministic_text",
+      "record_index": 44,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0044__deterministic_text.json",
+      "request_plan_position": 89,
+      "sample_id": "pilot_045",
+      "sha256": "96264f49fd4f87236cd8025d291c071b55a468d1a8d6b3836678aceb49db7176"
+    },
+    {
+      "condition": "deterministic_text",
+      "record_index": 45,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0045__deterministic_text.json",
+      "request_plan_position": 90,
+      "sample_id": "pilot_046",
+      "sha256": "02aa27bd1ca1f28bf34878b8ce18d58f095f9989a686e46696a7aae4f31da4c3"
+    },
+    {
+      "condition": "structured",
+      "record_index": 45,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0045__structured.json",
+      "request_plan_position": 91,
+      "sample_id": "pilot_046",
+      "sha256": "d94d904d5956d0541aca9e75a9d990836ae426258bf0d7a22fca184f7baea7b6"
+    },
+    {
+      "condition": "structured",
+      "record_index": 46,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0046__structured.json",
+      "request_plan_position": 92,
+      "sample_id": "pilot_047",
+      "sha256": "1449fea5ab081ae58ceec17077f562514de36e36b664272cfd0970423214cdc6"
+    },
+    {
+      "condition": "deterministic_text",
+      "record_index": 46,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0046__deterministic_text.json",
+      "request_plan_position": 93,
+      "sample_id": "pilot_047",
+      "sha256": "1a670b57325ebe3db7947382701161e38c6213534e1b375eb5477d54473b68d3"
+    },
+    {
+      "condition": "deterministic_text",
+      "record_index": 47,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0047__deterministic_text.json",
+      "request_plan_position": 94,
+      "sample_id": "pilot_048",
+      "sha256": "eeb85eda5ebd130505c2d444b516ac80bc458ef181cf2b47d76e4d984d06ac4c"
+    },
+    {
+      "condition": "structured",
+      "record_index": 47,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0047__structured.json",
+      "request_plan_position": 95,
+      "sample_id": "pilot_048",
+      "sha256": "bbbff05f7dbd171b96f2f3f34752305ab07c15de5695792725b87d56bbc7e87f"
+    },
+    {
+      "condition": "structured",
+      "record_index": 48,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0048__structured.json",
+      "request_plan_position": 96,
+      "sample_id": "pilot_049",
+      "sha256": "d36375d100b963d3817c138727b72567b6d9964a68cf591fd9b5a71235366955"
+    },
+    {
+      "condition": "deterministic_text",
+      "record_index": 48,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0048__deterministic_text.json",
+      "request_plan_position": 97,
+      "sample_id": "pilot_049",
+      "sha256": "08dd60dcc1a19e2d19f854dfa3f3e6d70f813bbe8bc380ded2cfe381c8a136e8"
+    },
+    {
+      "condition": "deterministic_text",
+      "record_index": 49,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0049__deterministic_text.json",
+      "request_plan_position": 98,
+      "sample_id": "pilot_050",
+      "sha256": "2b3f61f151fb003266725d9eebff9c3889b9fc968cf0fc81eb473610186c7f56"
+    },
+    {
+      "condition": "structured",
+      "record_index": 49,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0049__structured.json",
+      "request_plan_position": 99,
+      "sample_id": "pilot_050",
+      "sha256": "1feb7bda0b27cc30aff7c1b9e6f0e469061778f02f868318246b90efca4791f9"
+    },
+    {
+      "condition": "structured",
+      "record_index": 50,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0050__structured.json",
+      "request_plan_position": 100,
+      "sample_id": "pilot_051",
+      "sha256": "fa34b4dcd2225b927516af69ff2b14fbca23d387af3ddea12a5bdbb84f4077ee"
+    },
+    {
+      "condition": "deterministic_text",
+      "record_index": 50,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0050__deterministic_text.json",
+      "request_plan_position": 101,
+      "sample_id": "pilot_051",
+      "sha256": "184564bde99ab7e5e3262aa7b959008547457659f95412254d130ef7ee8ae8c0"
+    },
+    {
+      "condition": "deterministic_text",
+      "record_index": 51,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0051__deterministic_text.json",
+      "request_plan_position": 102,
+      "sample_id": "pilot_052",
+      "sha256": "f6d1f073a2891ecc5ec7568603b2f22f073897c520b6942d434f887275561574"
+    },
+    {
+      "condition": "structured",
+      "record_index": 51,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0051__structured.json",
+      "request_plan_position": 103,
+      "sample_id": "pilot_052",
+      "sha256": "059b90813361a07e58acdac2f0a9d0a0f132e02ef3a27b97e1108f95ac227503"
+    },
+    {
+      "condition": "structured",
+      "record_index": 52,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0052__structured.json",
+      "request_plan_position": 104,
+      "sample_id": "pilot_053",
+      "sha256": "1f13c8b5ba7029644022f9a57ea5be870d5c5f9d7e71cb727ce3edba60c30020"
+    },
+    {
+      "condition": "deterministic_text",
+      "record_index": 52,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0052__deterministic_text.json",
+      "request_plan_position": 105,
+      "sample_id": "pilot_053",
+      "sha256": "19c886c039b40f9211b4dd42bc7c8decd43f9f53fb089bd48192a079b80cd2d9"
+    },
+    {
+      "condition": "deterministic_text",
+      "record_index": 53,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0053__deterministic_text.json",
+      "request_plan_position": 106,
+      "sample_id": "pilot_054",
+      "sha256": "ecaef1f0185e3c35f7f44b3390a359cafe376f69b9c637fac663e1ac7fbb91dd"
+    },
+    {
+      "condition": "structured",
+      "record_index": 53,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0053__structured.json",
+      "request_plan_position": 107,
+      "sample_id": "pilot_054",
+      "sha256": "15ff687135d164c1f7f2d897f80a39f1bb00971d5bb6dd3e87ac7b66af0212c7"
+    },
+    {
+      "condition": "structured",
+      "record_index": 54,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0054__structured.json",
+      "request_plan_position": 108,
+      "sample_id": "pilot_055",
+      "sha256": "0886ec7f05ccfeef4a207e5595f6497f204c35b6f02fe67a654ec10b4f9cf807"
+    },
+    {
+      "condition": "deterministic_text",
+      "record_index": 54,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0054__deterministic_text.json",
+      "request_plan_position": 109,
+      "sample_id": "pilot_055",
+      "sha256": "7a4dbd18eee470b8345a810eed370d90e6d0e11842200e6a85372c1d4c8bb69d"
+    },
+    {
+      "condition": "deterministic_text",
+      "record_index": 55,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0055__deterministic_text.json",
+      "request_plan_position": 110,
+      "sample_id": "pilot_056",
+      "sha256": "1a2c4153f908c082aedc98eec4fb8635e86e5bd06b24591da1cc423a9a32af79"
+    },
+    {
+      "condition": "structured",
+      "record_index": 55,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0055__structured.json",
+      "request_plan_position": 111,
+      "sample_id": "pilot_056",
+      "sha256": "d1a30e9f8e07792d5c98cc98b29ea8bb202b06cdfed518ff4fab92410cec8d02"
+    },
+    {
+      "condition": "structured",
+      "record_index": 56,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0056__structured.json",
+      "request_plan_position": 112,
+      "sample_id": "pilot_057",
+      "sha256": "ddd663aabf9810fc632f690efdeae9ffab22d5e641bb842cf61cc9ba72d31d49"
+    },
+    {
+      "condition": "deterministic_text",
+      "record_index": 56,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0056__deterministic_text.json",
+      "request_plan_position": 113,
+      "sample_id": "pilot_057",
+      "sha256": "e1ead1bb0a21776c36fc1036dcec29c8e04b5fc1737ddd7dcaa271a3796d579f"
+    },
+    {
+      "condition": "deterministic_text",
+      "record_index": 57,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0057__deterministic_text.json",
+      "request_plan_position": 114,
+      "sample_id": "pilot_058",
+      "sha256": "20d8c301ae6750817c2143c8b4d52936afbbd61b9f431b833136b55c476a7f70"
+    },
+    {
+      "condition": "structured",
+      "record_index": 57,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0057__structured.json",
+      "request_plan_position": 115,
+      "sample_id": "pilot_058",
+      "sha256": "239d60968f2978eefbdae42b01011c437c34eb88ff322caf30b16d76feb8e8bc"
+    },
+    {
+      "condition": "structured",
+      "record_index": 58,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0058__structured.json",
+      "request_plan_position": 116,
+      "sample_id": "pilot_059",
+      "sha256": "074d0f5455dc51b0c5d0b4cd519ac9e6e656b86a1efefc130dbcd5b675b334cf"
+    },
+    {
+      "condition": "deterministic_text",
+      "record_index": 58,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0058__deterministic_text.json",
+      "request_plan_position": 117,
+      "sample_id": "pilot_059",
+      "sha256": "01660ad94c52884a0571e61bb6f8d3b877126040be151bd04c254cbff89cb626"
+    },
+    {
+      "condition": "deterministic_text",
+      "record_index": 59,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0059__deterministic_text.json",
+      "request_plan_position": 118,
+      "sample_id": "pilot_060",
+      "sha256": "d4718b3e0a2d15c01a4df94254692d4f16c07eb5e0c1cb007a6954454e7f3d95"
+    },
+    {
+      "condition": "structured",
+      "record_index": 59,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0059__structured.json",
+      "request_plan_position": 119,
+      "sample_id": "pilot_060",
+      "sha256": "e1b08f9b4bdf98d610c78343da930a7e87c78e7b79d6eb34db65c2a8972440fa"
+    },
+    {
+      "condition": "structured",
+      "record_index": 60,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0060__structured.json",
+      "request_plan_position": 120,
+      "sample_id": "pilot_061",
+      "sha256": "a8c6e4da1a10d9a97d80d7e6381447d84190f8083fd99f2552e8385cfbcdb6fe"
+    },
+    {
+      "condition": "deterministic_text",
+      "record_index": 60,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0060__deterministic_text.json",
+      "request_plan_position": 121,
+      "sample_id": "pilot_061",
+      "sha256": "acb3eed3dbebdab8817a4d74631413399fbf6a9b4617c313b92b8866af7635e5"
+    },
+    {
+      "condition": "deterministic_text",
+      "record_index": 61,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0061__deterministic_text.json",
+      "request_plan_position": 122,
+      "sample_id": "pilot_062",
+      "sha256": "f3d0fe41f43ca832797013636c7fde9af090a96efe46bce1aac2bacb34d5be95"
+    },
+    {
+      "condition": "structured",
+      "record_index": 61,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0061__structured.json",
+      "request_plan_position": 123,
+      "sample_id": "pilot_062",
+      "sha256": "082b97e1d054d64578580c09df8a77175493dd6b015f57e32b6e6b89a4ff250f"
+    },
+    {
+      "condition": "structured",
+      "record_index": 62,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0062__structured.json",
+      "request_plan_position": 124,
+      "sample_id": "pilot_063",
+      "sha256": "fdc9ca8001ad3cfb0089195ea9a30dbd4e0ff578ee4d6ca9bb16339ff0b8850d"
+    },
+    {
+      "condition": "deterministic_text",
+      "record_index": 62,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0062__deterministic_text.json",
+      "request_plan_position": 125,
+      "sample_id": "pilot_063",
+      "sha256": "9a9cc95bc1775248934d9c0c5b16bca115c81c54a418cfa4ee77fe0a652c45c8"
+    },
+    {
+      "condition": "deterministic_text",
+      "record_index": 63,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0063__deterministic_text.json",
+      "request_plan_position": 126,
+      "sample_id": "pilot_064",
+      "sha256": "cecc27e9c69d5da9cc7ec253b359e5a888ac2623242daf3a51bb8bde6cacdc01"
+    },
+    {
+      "condition": "structured",
+      "record_index": 63,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0063__structured.json",
+      "request_plan_position": 127,
+      "sample_id": "pilot_064",
+      "sha256": "72e21175add413c54a1199a4650955ccbda8f2383ae0e741926d43da35ef2a36"
+    },
+    {
+      "condition": "structured",
+      "record_index": 64,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0064__structured.json",
+      "request_plan_position": 128,
+      "sample_id": "pilot_065",
+      "sha256": "e5fb1f1007ca6d7a7ea82e20012d736b579d60a48e94c242b6b913bcee464cfa"
+    },
+    {
+      "condition": "deterministic_text",
+      "record_index": 64,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0064__deterministic_text.json",
+      "request_plan_position": 129,
+      "sample_id": "pilot_065",
+      "sha256": "a972b98f21339c62e9d186e02b635077f1faef4ed43f5194b114e6f4f6cf31dd"
+    },
+    {
+      "condition": "deterministic_text",
+      "record_index": 65,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0065__deterministic_text.json",
+      "request_plan_position": 130,
+      "sample_id": "pilot_066",
+      "sha256": "0fc5ec6e3e7518dfaf1e0bd0bd6a12bf1fc40488c360a7fad0731bd30a75f1d8"
+    },
+    {
+      "condition": "structured",
+      "record_index": 65,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0065__structured.json",
+      "request_plan_position": 131,
+      "sample_id": "pilot_066",
+      "sha256": "225180a00d52a0939fa9a72d4d5fc2d57919f818f2b951b5651b8b19a4d97222"
+    },
+    {
+      "condition": "structured",
+      "record_index": 66,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0066__structured.json",
+      "request_plan_position": 132,
+      "sample_id": "pilot_067",
+      "sha256": "938b6653d0d10ae9463cf1941b70ceed01f1c6b236572879a8afdf279b82d6d3"
+    },
+    {
+      "condition": "deterministic_text",
+      "record_index": 66,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0066__deterministic_text.json",
+      "request_plan_position": 133,
+      "sample_id": "pilot_067",
+      "sha256": "e31ee35f49b7ce4aca013318ed884c26db34125d300804657183152634aa9f77"
+    },
+    {
+      "condition": "deterministic_text",
+      "record_index": 67,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0067__deterministic_text.json",
+      "request_plan_position": 134,
+      "sample_id": "pilot_068",
+      "sha256": "be085fd13e1f55a5909eca23cd98bb374410653ef4fc001ebb0b75af4f6b5b18"
+    },
+    {
+      "condition": "structured",
+      "record_index": 67,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0067__structured.json",
+      "request_plan_position": 135,
+      "sample_id": "pilot_068",
+      "sha256": "29065bfc254c091ef89a326534403f1066f64002619e292b22c3dd03ba8dc2c9"
+    },
+    {
+      "condition": "structured",
+      "record_index": 68,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0068__structured.json",
+      "request_plan_position": 136,
+      "sample_id": "pilot_069",
+      "sha256": "35b0ae920b0a6cefc0f1a291eb66a1b9a50f99ccd8aed20b61702943d5b55411"
+    },
+    {
+      "condition": "deterministic_text",
+      "record_index": 68,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0068__deterministic_text.json",
+      "request_plan_position": 137,
+      "sample_id": "pilot_069",
+      "sha256": "98e01a3166135be201afa8b75ac33d8bef698bad4b0f344ced9922dfd629dfe2"
+    },
+    {
+      "condition": "deterministic_text",
+      "record_index": 69,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0069__deterministic_text.json",
+      "request_plan_position": 138,
+      "sample_id": "pilot_070",
+      "sha256": "952971e9dac5b676e68f21e439e5e51c053c8a28701c2697b342e43b98afeee3"
+    },
+    {
+      "condition": "structured",
+      "record_index": 69,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0069__structured.json",
+      "request_plan_position": 139,
+      "sample_id": "pilot_070",
+      "sha256": "98206eb3e229ca38a389776d5ac300314a7fa9030ae39abf43698017a74bda44"
+    },
+    {
+      "condition": "structured",
+      "record_index": 70,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0070__structured.json",
+      "request_plan_position": 140,
+      "sample_id": "pilot_071",
+      "sha256": "1584caa2cc04a0cfecfdfd9d6eaefec6dba72d17905d207df673fb5f00b2b6d4"
+    },
+    {
+      "condition": "deterministic_text",
+      "record_index": 70,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0070__deterministic_text.json",
+      "request_plan_position": 141,
+      "sample_id": "pilot_071",
+      "sha256": "6feae28a258478007cf12306ece9ea058eed6b86b53211984f1c3477ec751c61"
+    },
+    {
+      "condition": "deterministic_text",
+      "record_index": 71,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0071__deterministic_text.json",
+      "request_plan_position": 142,
+      "sample_id": "pilot_072",
+      "sha256": "19f2788440841e8fd38d5c4c62b8b65f513e17c0eed633f488bb94843cfa886d"
+    },
+    {
+      "condition": "structured",
+      "record_index": 71,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0071__structured.json",
+      "request_plan_position": 143,
+      "sample_id": "pilot_072",
+      "sha256": "49ea9e052db6c361b4c9f464a6b1c6293e1678e8165026ecbd63141c56f645ba"
+    },
+    {
+      "condition": "structured",
+      "record_index": 72,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0072__structured.json",
+      "request_plan_position": 144,
+      "sample_id": "pilot_073",
+      "sha256": "cf928835385435e3d6a35711e4ea8fb00c4286484ee8eb9116b5e6b302d78af6"
+    },
+    {
+      "condition": "deterministic_text",
+      "record_index": 72,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0072__deterministic_text.json",
+      "request_plan_position": 145,
+      "sample_id": "pilot_073",
+      "sha256": "961482ac0e32f7de9ea3956c71271b90be5c46daa355f9fbe01d744488e767c9"
+    },
+    {
+      "condition": "deterministic_text",
+      "record_index": 73,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0073__deterministic_text.json",
+      "request_plan_position": 146,
+      "sample_id": "pilot_074",
+      "sha256": "46f142492ac6db42e6faf34bcfa9938f44f1c6914f2dd6c34ea0a2474ada456b"
+    },
+    {
+      "condition": "structured",
+      "record_index": 73,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0073__structured.json",
+      "request_plan_position": 147,
+      "sample_id": "pilot_074",
+      "sha256": "a959b6024fc2aa4e51dade42c34895999b61b46c92f503881f6c638e8b156763"
+    },
+    {
+      "condition": "structured",
+      "record_index": 74,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0074__structured.json",
+      "request_plan_position": 148,
+      "sample_id": "pilot_075",
+      "sha256": "521be9d98c402b4bc566d27175a0d7ed6a66d07dba19700a7a5f426757729289"
+    },
+    {
+      "condition": "deterministic_text",
+      "record_index": 74,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0074__deterministic_text.json",
+      "request_plan_position": 149,
+      "sample_id": "pilot_075",
+      "sha256": "835886c079fe983cf9cdd066c444d5756bbd0cb9ff043ccde92bd461cda62d42"
+    },
+    {
+      "condition": "deterministic_text",
+      "record_index": 75,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0075__deterministic_text.json",
+      "request_plan_position": 150,
+      "sample_id": "pilot_076",
+      "sha256": "0b36444730f65c31e214b7091de3a478b67d6593a5b9d07414c4ee605ce75c90"
+    },
+    {
+      "condition": "structured",
+      "record_index": 75,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0075__structured.json",
+      "request_plan_position": 151,
+      "sample_id": "pilot_076",
+      "sha256": "8358150c772861c1ec379151bfb9a61b95aec910fb9554f1400137b7dc21f33d"
+    },
+    {
+      "condition": "structured",
+      "record_index": 76,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0076__structured.json",
+      "request_plan_position": 152,
+      "sample_id": "pilot_077",
+      "sha256": "ad4f17e0632be9690282178689aa9f5e27a6b847c6ceddfc4a33c85eb5cc3600"
+    },
+    {
+      "condition": "deterministic_text",
+      "record_index": 76,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0076__deterministic_text.json",
+      "request_plan_position": 153,
+      "sample_id": "pilot_077",
+      "sha256": "4985a4f570844013d5e0cbe7be2ff763ac0ee8afb9d35fe33c457ee5a46d7769"
+    },
+    {
+      "condition": "deterministic_text",
+      "record_index": 77,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0077__deterministic_text.json",
+      "request_plan_position": 154,
+      "sample_id": "pilot_078",
+      "sha256": "19cfff1471cc2dba37f4741dde77a58830d2f689065ee2ffe2d2935d0622ba7d"
+    },
+    {
+      "condition": "structured",
+      "record_index": 77,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0077__structured.json",
+      "request_plan_position": 155,
+      "sample_id": "pilot_078",
+      "sha256": "d9babff23a982d3e609b3adb19c8774b62bb058761c78679e04dc075a6d8495f"
+    },
+    {
+      "condition": "structured",
+      "record_index": 78,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0078__structured.json",
+      "request_plan_position": 156,
+      "sample_id": "pilot_079",
+      "sha256": "014f428bbcfc6426a3b935eef3f9d2d16d883ae4d9f702b07d1cc389564eb196"
+    },
+    {
+      "condition": "deterministic_text",
+      "record_index": 78,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0078__deterministic_text.json",
+      "request_plan_position": 157,
+      "sample_id": "pilot_079",
+      "sha256": "856abac7236fdde6334263845ce6e5fe13da80881a6383445dc0b7cef3ad8895"
+    },
+    {
+      "condition": "deterministic_text",
+      "record_index": 79,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0079__deterministic_text.json",
+      "request_plan_position": 158,
+      "sample_id": "pilot_080",
+      "sha256": "39e47b123b343ce4e7d49b47538d30abcbc4ca0bd8562ad02b823c3ad75a6a2e"
+    },
+    {
+      "condition": "structured",
+      "record_index": 79,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0079__structured.json",
+      "request_plan_position": 159,
+      "sample_id": "pilot_080",
+      "sha256": "1934cbb832a6309b232427e627e7ed4b7dff582ef8e1b2d9cfd8291755bb66e6"
+    },
+    {
+      "condition": "structured",
+      "record_index": 80,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0080__structured.json",
+      "request_plan_position": 160,
+      "sample_id": "pilot_081",
+      "sha256": "56386e35992c667fc96a58b177612ee9cf1b14f0616390e8c99127f1116474d1"
+    },
+    {
+      "condition": "deterministic_text",
+      "record_index": 80,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0080__deterministic_text.json",
+      "request_plan_position": 161,
+      "sample_id": "pilot_081",
+      "sha256": "7355c864fc3557a9bbdad67d4f05e7c0f5f130b8ed53ca413e07df8fe699221b"
+    },
+    {
+      "condition": "deterministic_text",
+      "record_index": 81,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0081__deterministic_text.json",
+      "request_plan_position": 162,
+      "sample_id": "pilot_082",
+      "sha256": "362d83eaae11ade9d6e149fe4f7ce2276767254ab14e6fa34a9f8fb2fb09a05b"
+    },
+    {
+      "condition": "structured",
+      "record_index": 81,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0081__structured.json",
+      "request_plan_position": 163,
+      "sample_id": "pilot_082",
+      "sha256": "ea305b2eac17fc34d08c72284b9fbf1f84a5b1a1c0f454c23cfeb6818531a898"
+    },
+    {
+      "condition": "structured",
+      "record_index": 82,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0082__structured.json",
+      "request_plan_position": 164,
+      "sample_id": "pilot_083",
+      "sha256": "97cabb25d0313f0376f023c3f8eeca392307e540de427a3f24e50e32bfee905e"
+    },
+    {
+      "condition": "deterministic_text",
+      "record_index": 82,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0082__deterministic_text.json",
+      "request_plan_position": 165,
+      "sample_id": "pilot_083",
+      "sha256": "6b6dadee2424b505b9fc93bc743c7da056de52f82a3a6d0b482a805196006dfe"
+    },
+    {
+      "condition": "deterministic_text",
+      "record_index": 83,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0083__deterministic_text.json",
+      "request_plan_position": 166,
+      "sample_id": "pilot_084",
+      "sha256": "d45e494259fe7845ba69d58653d31774eeb8413e7e1572dbff9f7dcc64286db2"
+    },
+    {
+      "condition": "structured",
+      "record_index": 83,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0083__structured.json",
+      "request_plan_position": 167,
+      "sample_id": "pilot_084",
+      "sha256": "9044a04cdea034596cc1076719fa6009a1b86edc04e1b97e7ad91b73103b6efd"
+    },
+    {
+      "condition": "structured",
+      "record_index": 84,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0084__structured.json",
+      "request_plan_position": 168,
+      "sample_id": "pilot_085",
+      "sha256": "02614c485eef4d43c6bb8cb7dd8cc207700c04a9c34606988c80c1c763267621"
+    },
+    {
+      "condition": "deterministic_text",
+      "record_index": 84,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0084__deterministic_text.json",
+      "request_plan_position": 169,
+      "sample_id": "pilot_085",
+      "sha256": "96e1a8b08b22c6700041d978dd4671deec981a9d0ae099b707e8653e51824b10"
+    },
+    {
+      "condition": "deterministic_text",
+      "record_index": 85,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0085__deterministic_text.json",
+      "request_plan_position": 170,
+      "sample_id": "pilot_086",
+      "sha256": "58c4ad4f1448c266c70ee28f78f3566e50ce943e141d7772222cd23249224a58"
+    },
+    {
+      "condition": "structured",
+      "record_index": 85,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0085__structured.json",
+      "request_plan_position": 171,
+      "sample_id": "pilot_086",
+      "sha256": "959975bbd22129d71cf1fdadcb41dd25ac344d336a0c7712074d509d24f529f7"
+    },
+    {
+      "condition": "structured",
+      "record_index": 86,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0086__structured.json",
+      "request_plan_position": 172,
+      "sample_id": "pilot_087",
+      "sha256": "6f611037b6acfcd38810e62ccae5f774f4096303a0e701677e2488df08676ec9"
+    },
+    {
+      "condition": "deterministic_text",
+      "record_index": 86,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0086__deterministic_text.json",
+      "request_plan_position": 173,
+      "sample_id": "pilot_087",
+      "sha256": "0c8f94c4c6fd7e2e472867eba8f0c6bd05b7762c5baedb275dbb278411b8a1bb"
+    },
+    {
+      "condition": "deterministic_text",
+      "record_index": 87,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0087__deterministic_text.json",
+      "request_plan_position": 174,
+      "sample_id": "pilot_088",
+      "sha256": "018e6db4a5083a8d700514ca4b3ebc4137abe26f81ec9b0c7650d74c194fae66"
+    },
+    {
+      "condition": "structured",
+      "record_index": 87,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0087__structured.json",
+      "request_plan_position": 175,
+      "sample_id": "pilot_088",
+      "sha256": "05e7abb4a0f5018d84cce3634869c6d6be89e09cb9344c562d750beba5a68a9f"
+    },
+    {
+      "condition": "structured",
+      "record_index": 88,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0088__structured.json",
+      "request_plan_position": 176,
+      "sample_id": "pilot_089",
+      "sha256": "94dba75219120256f5933529aa659fe6b57081ee1224e7a38fd62da17b85ae16"
+    },
+    {
+      "condition": "deterministic_text",
+      "record_index": 88,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0088__deterministic_text.json",
+      "request_plan_position": 177,
+      "sample_id": "pilot_089",
+      "sha256": "9d3cf437cff0dd744928c0d3751b755b97c900ecef519900b85822ea1a095aa9"
+    },
+    {
+      "condition": "deterministic_text",
+      "record_index": 89,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0089__deterministic_text.json",
+      "request_plan_position": 178,
+      "sample_id": "pilot_090",
+      "sha256": "f0e2e1726fb84f8fa83dd77ac546dce9b3bfd5d855d7d8ae68e2298fbe537f39"
+    },
+    {
+      "condition": "structured",
+      "record_index": 89,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0089__structured.json",
+      "request_plan_position": 179,
+      "sample_id": "pilot_090",
+      "sha256": "3e025b78b9a051c747bde8c8a273db8e551bc5274096095208ada5c24c1f1ca4"
+    },
+    {
+      "condition": "structured",
+      "record_index": 90,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0090__structured.json",
+      "request_plan_position": 180,
+      "sample_id": "pilot_091",
+      "sha256": "bfa70fc1ab7b7b0a3b2bd527273733c49f0713b51b2cfaba60588ea70364a934"
+    },
+    {
+      "condition": "deterministic_text",
+      "record_index": 90,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0090__deterministic_text.json",
+      "request_plan_position": 181,
+      "sample_id": "pilot_091",
+      "sha256": "2cadc044c3cdc0c0f8cece9bdb96d8facd99ce88866e7460ce776ad535f51a88"
+    },
+    {
+      "condition": "deterministic_text",
+      "record_index": 91,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0091__deterministic_text.json",
+      "request_plan_position": 182,
+      "sample_id": "pilot_092",
+      "sha256": "3f52a9c9aca99477840170eb35ea86da34756caf818bc7d328839fa4a5aefaa8"
+    },
+    {
+      "condition": "structured",
+      "record_index": 91,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0091__structured.json",
+      "request_plan_position": 183,
+      "sample_id": "pilot_092",
+      "sha256": "d9bcc83c67dff2d76848f6682c2369fb8c2d6f5d5b33f55aa2aca9c397ff031b"
+    },
+    {
+      "condition": "structured",
+      "record_index": 92,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0092__structured.json",
+      "request_plan_position": 184,
+      "sample_id": "pilot_093",
+      "sha256": "aeb4d82b1f34e13368189cd9ac4aefdfab97817ac9dd4a7f9de8e126a1d25c3d"
+    },
+    {
+      "condition": "deterministic_text",
+      "record_index": 92,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0092__deterministic_text.json",
+      "request_plan_position": 185,
+      "sample_id": "pilot_093",
+      "sha256": "ebebbfb5b325f1b7d757dd0b1b0703568604977dde00465df13fb69abbc07cf2"
+    },
+    {
+      "condition": "deterministic_text",
+      "record_index": 93,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0093__deterministic_text.json",
+      "request_plan_position": 186,
+      "sample_id": "pilot_094",
+      "sha256": "67c73965effd3b23f11109a6c7e7984fc552e77aa2b341f52ca9ebfc2ca11c67"
+    },
+    {
+      "condition": "structured",
+      "record_index": 93,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0093__structured.json",
+      "request_plan_position": 187,
+      "sample_id": "pilot_094",
+      "sha256": "99d5f2393288d1321553be18c40b5b93438f561d8fb28d51b215c5d86c4614f6"
+    },
+    {
+      "condition": "structured",
+      "record_index": 94,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0094__structured.json",
+      "request_plan_position": 188,
+      "sample_id": "pilot_095",
+      "sha256": "d825ee0349c271574618d21f4daef21a3ec3926f551201255f1d72f6fb0e5d68"
+    },
+    {
+      "condition": "deterministic_text",
+      "record_index": 94,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0094__deterministic_text.json",
+      "request_plan_position": 189,
+      "sample_id": "pilot_095",
+      "sha256": "ca5dd04845de653e68fe53c9d8a2964755976ae50f45a503e75563cba83f3226"
+    },
+    {
+      "condition": "deterministic_text",
+      "record_index": 95,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0095__deterministic_text.json",
+      "request_plan_position": 190,
+      "sample_id": "pilot_096",
+      "sha256": "e2cf8c4667d52e6f7f81f34cf78a1baed6a846d63a49d665b83142791df63cba"
+    },
+    {
+      "condition": "structured",
+      "record_index": 95,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0095__structured.json",
+      "request_plan_position": 191,
+      "sample_id": "pilot_096",
+      "sha256": "c1ae6303170f2eda07001e7c2f3e8f2577cebc07ffc9a432bdf71ac131cc19a7"
+    },
+    {
+      "condition": "structured",
+      "record_index": 96,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0096__structured.json",
+      "request_plan_position": 192,
+      "sample_id": "pilot_097",
+      "sha256": "b848ac625489fcb9cd2f36885d2d650d5d0b559065e2c67e0d0228a3f8ba9ecd"
+    },
+    {
+      "condition": "deterministic_text",
+      "record_index": 96,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0096__deterministic_text.json",
+      "request_plan_position": 193,
+      "sample_id": "pilot_097",
+      "sha256": "8d18f8c752dde23d166a138d52daa744aee0c0bd94af69cc0c02d4824b44c446"
+    },
+    {
+      "condition": "deterministic_text",
+      "record_index": 97,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0097__deterministic_text.json",
+      "request_plan_position": 194,
+      "sample_id": "pilot_098",
+      "sha256": "b9dc42c049d4aa0fa7b0d9f76dc94635faced1e75e3afae68c3860162c6467ca"
+    },
+    {
+      "condition": "structured",
+      "record_index": 97,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0097__structured.json",
+      "request_plan_position": 195,
+      "sample_id": "pilot_098",
+      "sha256": "d2dca5a204dc69a567105d2c4825acd087c7d39aa078f0b7f5326a3a505b6ca7"
+    },
+    {
+      "condition": "structured",
+      "record_index": 98,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0098__structured.json",
+      "request_plan_position": 196,
+      "sample_id": "pilot_099",
+      "sha256": "129d61a117e957b6c97a18f506d13ceb8fc68ff4bf7460ca45b52bbe26f1bb29"
+    },
+    {
+      "condition": "deterministic_text",
+      "record_index": 98,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0098__deterministic_text.json",
+      "request_plan_position": 197,
+      "sample_id": "pilot_099",
+      "sha256": "e244d32d816c96832e43338c1576d21298d495b05a66d5ca45aace97d0f93f82"
+    },
+    {
+      "condition": "deterministic_text",
+      "record_index": 99,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0099__deterministic_text.json",
+      "request_plan_position": 198,
+      "sample_id": "pilot_100",
+      "sha256": "105aee9c32a5974cedd3a848e4d5e71f945ded5b799b6653b3ccb4b3909b7ac7"
+    },
+    {
+      "condition": "structured",
+      "record_index": 99,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0099__structured.json",
+      "request_plan_position": 199,
+      "sample_id": "pilot_100",
+      "sha256": "4d89cf2eddf2631082bb87e6a7c66c72954d45fc82f14f7b72cafd87d1994464"
+    },
+    {
+      "condition": "structured",
+      "record_index": 100,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0100__structured.json",
+      "request_plan_position": 200,
+      "sample_id": "pilot_101",
+      "sha256": "64e6966ab2b8407d1612b55e4a88c6e18dd9138ac36774a182f293cbb2c7f308"
+    },
+    {
+      "condition": "deterministic_text",
+      "record_index": 100,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0100__deterministic_text.json",
+      "request_plan_position": 201,
+      "sample_id": "pilot_101",
+      "sha256": "c45775b75c10792d74906d5a10771b1d98ddc139dbabe7408bad57b48cbe14f9"
+    },
+    {
+      "condition": "deterministic_text",
+      "record_index": 101,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0101__deterministic_text.json",
+      "request_plan_position": 202,
+      "sample_id": "pilot_102",
+      "sha256": "f9e9074b3b845e52a9b9a2cb821182d9c1c4993a9e2a645ce5a1d6c7b4fde9d8"
+    },
+    {
+      "condition": "structured",
+      "record_index": 101,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0101__structured.json",
+      "request_plan_position": 203,
+      "sample_id": "pilot_102",
+      "sha256": "b1dd82a7b3e72364f5c845f903beae862ac285ff035e921d39ef1750f0cf6997"
+    },
+    {
+      "condition": "structured",
+      "record_index": 102,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0102__structured.json",
+      "request_plan_position": 204,
+      "sample_id": "pilot_103",
+      "sha256": "0b1840c92ee8a766633aa55ba72c179501fc760f962ebdc5fb1c017a6f8a1fc6"
+    },
+    {
+      "condition": "deterministic_text",
+      "record_index": 102,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0102__deterministic_text.json",
+      "request_plan_position": 205,
+      "sample_id": "pilot_103",
+      "sha256": "b385c2740e91f7528246629fa57c6b2b8328c1bc32135075675ec4ee367bfb07"
+    },
+    {
+      "condition": "deterministic_text",
+      "record_index": 103,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0103__deterministic_text.json",
+      "request_plan_position": 206,
+      "sample_id": "pilot_104",
+      "sha256": "0791450a5625b4ecc204be278947ed545e4b263d9f7f3aa26f5cae0d897bd9f6"
+    },
+    {
+      "condition": "structured",
+      "record_index": 103,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0103__structured.json",
+      "request_plan_position": 207,
+      "sample_id": "pilot_104",
+      "sha256": "f6db82f7abfab5128c7d4e14c357e28955f4211e5dce7072cfad87cae68513fe"
+    },
+    {
+      "condition": "structured",
+      "record_index": 104,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0104__structured.json",
+      "request_plan_position": 208,
+      "sample_id": "pilot_105",
+      "sha256": "fac7cf9c2252656d27174ba1f897f144613ea34c0f1d2d88a015535ebde417ae"
+    },
+    {
+      "condition": "deterministic_text",
+      "record_index": 104,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0104__deterministic_text.json",
+      "request_plan_position": 209,
+      "sample_id": "pilot_105",
+      "sha256": "8969e0ea1c9f95521b9fcb789a7e3d4bc2600cecc88fe8ddb09d14928c223cba"
+    },
+    {
+      "condition": "deterministic_text",
+      "record_index": 105,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0105__deterministic_text.json",
+      "request_plan_position": 210,
+      "sample_id": "pilot_106",
+      "sha256": "bd8840cc819fee5e45e9e6746991848bafda683e3f7cfd0c2db47105b5b3e258"
+    },
+    {
+      "condition": "structured",
+      "record_index": 105,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0105__structured.json",
+      "request_plan_position": 211,
+      "sample_id": "pilot_106",
+      "sha256": "f23f55b1a9cf53c6fbcbd0c8e5040dda88de2fb89f3088cbb22edf9ff293246e"
+    },
+    {
+      "condition": "structured",
+      "record_index": 106,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0106__structured.json",
+      "request_plan_position": 212,
+      "sample_id": "pilot_107",
+      "sha256": "15aab23ace035a1d2747f4f0d90b569be93e6232e3b0aaad7003c9646f365914"
+    },
+    {
+      "condition": "deterministic_text",
+      "record_index": 106,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0106__deterministic_text.json",
+      "request_plan_position": 213,
+      "sample_id": "pilot_107",
+      "sha256": "1a1b30be265362c5b0bff16b968f121759388ac4fda7d466afd1b27eb67b7fed"
+    },
+    {
+      "condition": "deterministic_text",
+      "record_index": 107,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0107__deterministic_text.json",
+      "request_plan_position": 214,
+      "sample_id": "pilot_108",
+      "sha256": "641335a0bf893f228825f59976661cd066ec7b161f00b6fe8a44ca3498f751c9"
+    },
+    {
+      "condition": "structured",
+      "record_index": 107,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0107__structured.json",
+      "request_plan_position": 215,
+      "sample_id": "pilot_108",
+      "sha256": "e9b4765dbb398e09a8b55a2f7f1231a1d579498db3c95165bb025329d9f91fd1"
+    },
+    {
+      "condition": "structured",
+      "record_index": 108,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0108__structured.json",
+      "request_plan_position": 216,
+      "sample_id": "pilot_109",
+      "sha256": "15a8ec88f996ec5a79fbf0567eaa4253a729a46c1d583052b56749cb61d6d7b2"
+    },
+    {
+      "condition": "deterministic_text",
+      "record_index": 108,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0108__deterministic_text.json",
+      "request_plan_position": 217,
+      "sample_id": "pilot_109",
+      "sha256": "fbffe7fead0bab9636e3c70f196efdcc46214399470bb4206438873f998c9cd6"
+    },
+    {
+      "condition": "deterministic_text",
+      "record_index": 109,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0109__deterministic_text.json",
+      "request_plan_position": 218,
+      "sample_id": "pilot_110",
+      "sha256": "95543bc7c203e6c6182d9062e1d6ca65e51873023f013d089d0258d42096e51d"
+    },
+    {
+      "condition": "structured",
+      "record_index": 109,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0109__structured.json",
+      "request_plan_position": 219,
+      "sample_id": "pilot_110",
+      "sha256": "1ad43e6dd5b9879b974a39c267faaea90c8fcb10f81687de5c835e96f1518814"
+    },
+    {
+      "condition": "structured",
+      "record_index": 110,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0110__structured.json",
+      "request_plan_position": 220,
+      "sample_id": "pilot_111",
+      "sha256": "be295f4baa1312b39cf71b6266c00aa7f525c678f1c1793fee3180f7cd58eef3"
+    },
+    {
+      "condition": "deterministic_text",
+      "record_index": 110,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0110__deterministic_text.json",
+      "request_plan_position": 221,
+      "sample_id": "pilot_111",
+      "sha256": "d221f046a68d5120e67f57f9caaf94dc06b9a9a92b109fa9bb58dbc064b13c41"
+    },
+    {
+      "condition": "deterministic_text",
+      "record_index": 111,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0111__deterministic_text.json",
+      "request_plan_position": 222,
+      "sample_id": "pilot_112",
+      "sha256": "2bda30e51557ba413a2df215bd192d0e6c880b7cde0f9c387c6c9416cab89015"
+    },
+    {
+      "condition": "structured",
+      "record_index": 111,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0111__structured.json",
+      "request_plan_position": 223,
+      "sample_id": "pilot_112",
+      "sha256": "3247b2986bd15dfafa05a1f68dd3944d81bae79e9d8cd91c6a92f3dbacef9d9f"
+    },
+    {
+      "condition": "structured",
+      "record_index": 112,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0112__structured.json",
+      "request_plan_position": 224,
+      "sample_id": "pilot_113",
+      "sha256": "c4e8f9f736ef11b5325f1a9f3814954f98a8234909e0c0e3ea69976d859f4868"
+    },
+    {
+      "condition": "deterministic_text",
+      "record_index": 112,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0112__deterministic_text.json",
+      "request_plan_position": 225,
+      "sample_id": "pilot_113",
+      "sha256": "67e7d1b5755ebbf746c2fa5285b57b0bd7d5b53de2dda97c69595a00b3af9444"
+    },
+    {
+      "condition": "deterministic_text",
+      "record_index": 113,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0113__deterministic_text.json",
+      "request_plan_position": 226,
+      "sample_id": "pilot_114",
+      "sha256": "5f1871773e49d7286d9407c50af2b785229670e10fab7c5bd6c969de03e5b9f7"
+    },
+    {
+      "condition": "structured",
+      "record_index": 113,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0113__structured.json",
+      "request_plan_position": 227,
+      "sample_id": "pilot_114",
+      "sha256": "0d167963417ffa87b4f0135031bcadd41277075497b5097de042a28ac61954f6"
+    },
+    {
+      "condition": "structured",
+      "record_index": 114,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0114__structured.json",
+      "request_plan_position": 228,
+      "sample_id": "pilot_115",
+      "sha256": "271b04eae553251f6cb230e53e1076d073442ee70438904e8c1e44f2805a12bd"
+    },
+    {
+      "condition": "deterministic_text",
+      "record_index": 114,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0114__deterministic_text.json",
+      "request_plan_position": 229,
+      "sample_id": "pilot_115",
+      "sha256": "4954128fe5f91a1cbf212024b384f4efa64e8c8a4681a69e423c0faa2a1537d5"
+    },
+    {
+      "condition": "deterministic_text",
+      "record_index": 115,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0115__deterministic_text.json",
+      "request_plan_position": 230,
+      "sample_id": "pilot_116",
+      "sha256": "452771c3afd1fe982bf1b5ba185d7f2495374aa3c9fbc03c916d57635fc6a8ab"
+    },
+    {
+      "condition": "structured",
+      "record_index": 115,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0115__structured.json",
+      "request_plan_position": 231,
+      "sample_id": "pilot_116",
+      "sha256": "0715af73ca7a3b28edffcbcbdea70faebbf4fb775558196cdddf875d4aadbac0"
+    },
+    {
+      "condition": "structured",
+      "record_index": 116,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0116__structured.json",
+      "request_plan_position": 232,
+      "sample_id": "pilot_117",
+      "sha256": "75dfa9190c2058df0bb2b0de844cc53113edc390fdb0d5a4ccd6f1a8b0be1b59"
+    },
+    {
+      "condition": "deterministic_text",
+      "record_index": 116,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0116__deterministic_text.json",
+      "request_plan_position": 233,
+      "sample_id": "pilot_117",
+      "sha256": "c16d3db3204f6448ecd9f6670c0d98217979fa2816ec1b4fb70e28e74ab62c13"
+    },
+    {
+      "condition": "deterministic_text",
+      "record_index": 117,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0117__deterministic_text.json",
+      "request_plan_position": 234,
+      "sample_id": "pilot_118",
+      "sha256": "765755f6d555e6dbc4403bd372a2f462363c904b2454e2a233ab385f655e5522"
+    },
+    {
+      "condition": "structured",
+      "record_index": 117,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0117__structured.json",
+      "request_plan_position": 235,
+      "sample_id": "pilot_118",
+      "sha256": "e60601b8f6aaf30f59db97249956853638674b669175ebdb9ba85a7d37808620"
+    },
+    {
+      "condition": "structured",
+      "record_index": 118,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0118__structured.json",
+      "request_plan_position": 236,
+      "sample_id": "pilot_119",
+      "sha256": "98776aac08f1d0207878f7c405cc5dd17ce638f55d4244dc174ec0d9db4c9c73"
+    },
+    {
+      "condition": "deterministic_text",
+      "record_index": 118,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0118__deterministic_text.json",
+      "request_plan_position": 237,
+      "sample_id": "pilot_119",
+      "sha256": "6bd58b62c7c58793e31f9b11ffdf15c3bb00e481a6b11f3fcae1f99a5d477a80"
+    },
+    {
+      "condition": "deterministic_text",
+      "record_index": 119,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0119__deterministic_text.json",
+      "request_plan_position": 238,
+      "sample_id": "pilot_120",
+      "sha256": "1e50b2680e5eff2f9f7368bba509c1ea94eca64fbe94ad9276c2647941529d20"
+    },
+    {
+      "condition": "structured",
+      "record_index": 119,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0119__structured.json",
+      "request_plan_position": 239,
+      "sample_id": "pilot_120",
+      "sha256": "7d9f8d7546b5a3cfc83c249695735a66917f9de723e03b0a7eebee5e6c386de6"
+    },
+    {
+      "condition": "structured",
+      "record_index": 120,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0120__structured.json",
+      "request_plan_position": 240,
+      "sample_id": "pilot_121",
+      "sha256": "8960c4a833e88d5c88561fe2800eca3ebb18a07d5654712f563664a653bf7476"
+    },
+    {
+      "condition": "deterministic_text",
+      "record_index": 120,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0120__deterministic_text.json",
+      "request_plan_position": 241,
+      "sample_id": "pilot_121",
+      "sha256": "c8579ef25c439e8ddfb2bcda478f63a088ba8951a4a2292b0d013ec6347b7f4c"
+    },
+    {
+      "condition": "deterministic_text",
+      "record_index": 121,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0121__deterministic_text.json",
+      "request_plan_position": 242,
+      "sample_id": "pilot_122",
+      "sha256": "e6f8362d891097d7c7805e473676390235e3f78f7b6a2519f80bf660ff2e54fc"
+    },
+    {
+      "condition": "structured",
+      "record_index": 121,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0121__structured.json",
+      "request_plan_position": 243,
+      "sample_id": "pilot_122",
+      "sha256": "e1763c24b6499ab96bbd89fad900daf42eb39a57204800748d3a97c246645a94"
+    },
+    {
+      "condition": "structured",
+      "record_index": 122,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0122__structured.json",
+      "request_plan_position": 244,
+      "sample_id": "pilot_123",
+      "sha256": "75c42bd14114d5fc3508302363693c53b450258cddf50d99be51212794ed3f8f"
+    },
+    {
+      "condition": "deterministic_text",
+      "record_index": 122,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0122__deterministic_text.json",
+      "request_plan_position": 245,
+      "sample_id": "pilot_123",
+      "sha256": "487717c48b3c73e86bf69cf076c2ef5cc36cd4bffad436f058e7703880cbe6d5"
+    },
+    {
+      "condition": "deterministic_text",
+      "record_index": 123,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0123__deterministic_text.json",
+      "request_plan_position": 246,
+      "sample_id": "pilot_124",
+      "sha256": "7408f9bc0b7660efff31cb81f66adc702771066bd9014c4425c8d2872e57a5c2"
+    },
+    {
+      "condition": "structured",
+      "record_index": 123,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0123__structured.json",
+      "request_plan_position": 247,
+      "sample_id": "pilot_124",
+      "sha256": "dc1239dbc855571ab026e85d32b432bdb870781984feb5ce2f3e45c0e33c51de"
+    },
+    {
+      "condition": "structured",
+      "record_index": 124,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0124__structured.json",
+      "request_plan_position": 248,
+      "sample_id": "pilot_125",
+      "sha256": "7b6301214ff2d48242765ccde4e91bd1e246c5fefd23c0110436579bd52f4ed8"
+    },
+    {
+      "condition": "deterministic_text",
+      "record_index": 124,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0124__deterministic_text.json",
+      "request_plan_position": 249,
+      "sample_id": "pilot_125",
+      "sha256": "d5c76383cc1f13cbba60327c2407fcd93cfae3f6f082062f328995738f22f3bb"
+    },
+    {
+      "condition": "deterministic_text",
+      "record_index": 125,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0125__deterministic_text.json",
+      "request_plan_position": 250,
+      "sample_id": "pilot_126",
+      "sha256": "cfca66246e907ad0752fcd13fbab2408811143b800b292a86923b7798d9d2575"
+    },
+    {
+      "condition": "structured",
+      "record_index": 125,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0125__structured.json",
+      "request_plan_position": 251,
+      "sample_id": "pilot_126",
+      "sha256": "518ce6ca3cd1891a90692e44e13ee24b5d2048355df865a6db9a7c275f60408d"
+    },
+    {
+      "condition": "structured",
+      "record_index": 126,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0126__structured.json",
+      "request_plan_position": 252,
+      "sample_id": "pilot_127",
+      "sha256": "6138dda764982e211a89a349e62ec4388196cbeb17a32babc91675bf2c4205a8"
+    },
+    {
+      "condition": "deterministic_text",
+      "record_index": 126,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0126__deterministic_text.json",
+      "request_plan_position": 253,
+      "sample_id": "pilot_127",
+      "sha256": "76d5c8626cc0ef92c7edd9cf25d4c882c8cf652c03ef077a669f4d875b52d316"
+    },
+    {
+      "condition": "deterministic_text",
+      "record_index": 127,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0127__deterministic_text.json",
+      "request_plan_position": 254,
+      "sample_id": "pilot_128",
+      "sha256": "176a9f7306d2798f6fc55169564ffb25a4276762c51604944085fb6497bdc91b"
+    },
+    {
+      "condition": "structured",
+      "record_index": 127,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0127__structured.json",
+      "request_plan_position": 255,
+      "sample_id": "pilot_128",
+      "sha256": "47f9900adb48e74094a06fa12dc87de3b60885c842f8310fd43451b9078f4e22"
+    },
+    {
+      "condition": "structured",
+      "record_index": 128,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0128__structured.json",
+      "request_plan_position": 256,
+      "sample_id": "pilot_129",
+      "sha256": "af96d91b26640ac0f4c2af65faa4e745e07a32b6f6464f5ff7b12eb9c5d3d86f"
+    },
+    {
+      "condition": "deterministic_text",
+      "record_index": 128,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0128__deterministic_text.json",
+      "request_plan_position": 257,
+      "sample_id": "pilot_129",
+      "sha256": "6a9ea1a6e5b9b94390a3ce8d058367e7920dfc566c89c7a4d74128ff3dd975b4"
+    },
+    {
+      "condition": "deterministic_text",
+      "record_index": 129,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0129__deterministic_text.json",
+      "request_plan_position": 258,
+      "sample_id": "pilot_130",
+      "sha256": "67a6d621ffe979dfa2586b330a435e826d02db10f849198184dcad47f0694827"
+    },
+    {
+      "condition": "structured",
+      "record_index": 129,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0129__structured.json",
+      "request_plan_position": 259,
+      "sample_id": "pilot_130",
+      "sha256": "f9c58adf58c3aa5d3b749542017e42b41f3d9219b4d8820c66ca82dba50ba57e"
+    },
+    {
+      "condition": "structured",
+      "record_index": 130,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0130__structured.json",
+      "request_plan_position": 260,
+      "sample_id": "pilot_131",
+      "sha256": "c78f0ef7bb7e9afa0952688b70718fc5b2d2d89d80f150d3f4950bcd6d2344aa"
+    },
+    {
+      "condition": "deterministic_text",
+      "record_index": 130,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0130__deterministic_text.json",
+      "request_plan_position": 261,
+      "sample_id": "pilot_131",
+      "sha256": "78207e8554be4d6c938e1b3e64f56326d1d4837ac48f381a07827828e9e7d419"
+    },
+    {
+      "condition": "deterministic_text",
+      "record_index": 131,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0131__deterministic_text.json",
+      "request_plan_position": 262,
+      "sample_id": "pilot_132",
+      "sha256": "c03f50ba24f9ccdff4e66ea0955ce4f81178fb0ef7ade944a1c42a9ff5541620"
+    },
+    {
+      "condition": "structured",
+      "record_index": 131,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0131__structured.json",
+      "request_plan_position": 263,
+      "sample_id": "pilot_132",
+      "sha256": "414ed71cf55d12c16b5b0ac76759144098e774c2b8b001d6de7e8ca79e6e03fd"
+    },
+    {
+      "condition": "structured",
+      "record_index": 132,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0132__structured.json",
+      "request_plan_position": 264,
+      "sample_id": "pilot_133",
+      "sha256": "c99323529ecfaf11975d87af489144e1ccfd98374f318f20d871e01380914f72"
+    },
+    {
+      "condition": "deterministic_text",
+      "record_index": 132,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0132__deterministic_text.json",
+      "request_plan_position": 265,
+      "sample_id": "pilot_133",
+      "sha256": "510e6ff9f5e061260fa8906559cc9e960d73e6a14df093c4d27680613ce52931"
+    },
+    {
+      "condition": "deterministic_text",
+      "record_index": 133,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0133__deterministic_text.json",
+      "request_plan_position": 266,
+      "sample_id": "pilot_134",
+      "sha256": "b49858eb8d37b9abe318290bc5472d039e625bc3452d4ce8070ff8b14fe4c534"
+    },
+    {
+      "condition": "structured",
+      "record_index": 133,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0133__structured.json",
+      "request_plan_position": 267,
+      "sample_id": "pilot_134",
+      "sha256": "c09ac2881230a389755255f8cb8562c3f2f1eec7c88b2eea658efefe76dd27f6"
+    },
+    {
+      "condition": "structured",
+      "record_index": 134,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0134__structured.json",
+      "request_plan_position": 268,
+      "sample_id": "pilot_135",
+      "sha256": "cb61e1478fb923604475ce40052a5fe11df3477b0ed574e397d92eabb0577a5b"
+    },
+    {
+      "condition": "deterministic_text",
+      "record_index": 134,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0134__deterministic_text.json",
+      "request_plan_position": 269,
+      "sample_id": "pilot_135",
+      "sha256": "7129f13abec40b072cf86d98193943bfdb0780059685a3000de42a5d607b6682"
+    },
+    {
+      "condition": "deterministic_text",
+      "record_index": 135,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0135__deterministic_text.json",
+      "request_plan_position": 270,
+      "sample_id": "pilot_136",
+      "sha256": "d604a7c25d2252cdecdb44e3372a064778cc7cd20651c495922db779fb22d374"
+    },
+    {
+      "condition": "structured",
+      "record_index": 135,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0135__structured.json",
+      "request_plan_position": 271,
+      "sample_id": "pilot_136",
+      "sha256": "108d410860ed547317a087cdae0575e79755a2932910bdb7290334c8dc6ee469"
+    },
+    {
+      "condition": "structured",
+      "record_index": 136,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0136__structured.json",
+      "request_plan_position": 272,
+      "sample_id": "pilot_137",
+      "sha256": "feb9afff247107ca7dbef225bd89168e7510a139d17a0a467b8c4d482ab06de7"
+    },
+    {
+      "condition": "deterministic_text",
+      "record_index": 136,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0136__deterministic_text.json",
+      "request_plan_position": 273,
+      "sample_id": "pilot_137",
+      "sha256": "01b68fd7f128a8cf6ad9eb29ecd8b9b6da62e95fee9e6dc6cde19c495e7cd90e"
+    },
+    {
+      "condition": "deterministic_text",
+      "record_index": 137,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0137__deterministic_text.json",
+      "request_plan_position": 274,
+      "sample_id": "pilot_138",
+      "sha256": "cf5513a15b5477b3d1c5546571ae2456716b8d303aec4ae1037f6453e702cf62"
+    },
+    {
+      "condition": "structured",
+      "record_index": 137,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0137__structured.json",
+      "request_plan_position": 275,
+      "sample_id": "pilot_138",
+      "sha256": "f7bfdedbe8122721d37a2bbaf81298534a11a84d8b30300afae874e725556cfb"
+    },
+    {
+      "condition": "structured",
+      "record_index": 138,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0138__structured.json",
+      "request_plan_position": 276,
+      "sample_id": "pilot_139",
+      "sha256": "454c7e0cf0c44d7c46688f9e2396c5194505a2fddebb237e01178766aaca4aa6"
+    },
+    {
+      "condition": "deterministic_text",
+      "record_index": 138,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0138__deterministic_text.json",
+      "request_plan_position": 277,
+      "sample_id": "pilot_139",
+      "sha256": "242183a90f1d398195f18b49c11d82640a4064e1af8bd005c9554b79b2c49aeb"
+    },
+    {
+      "condition": "deterministic_text",
+      "record_index": 139,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0139__deterministic_text.json",
+      "request_plan_position": 278,
+      "sample_id": "pilot_140",
+      "sha256": "44f201b6cdad4f91fd46aadbb7d26d4095621cfafa6de297b1ebc49e02555cb4"
+    },
+    {
+      "condition": "structured",
+      "record_index": 139,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0139__structured.json",
+      "request_plan_position": 279,
+      "sample_id": "pilot_140",
+      "sha256": "59ab1ef8e51979881cee467e3a311328dd5939dbd9a0877157054d44572601c8"
+    },
+    {
+      "condition": "structured",
+      "record_index": 140,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0140__structured.json",
+      "request_plan_position": 280,
+      "sample_id": "pilot_141",
+      "sha256": "f0e24980e55497e12a14690e305722c8fe2d2ee7f1b045358a693e42f2e8e7f3"
+    },
+    {
+      "condition": "deterministic_text",
+      "record_index": 140,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0140__deterministic_text.json",
+      "request_plan_position": 281,
+      "sample_id": "pilot_141",
+      "sha256": "418a06189a9a90f3dbd516b3626c1a1f122d7bfc8242deb61b158987f505681d"
+    },
+    {
+      "condition": "deterministic_text",
+      "record_index": 141,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0141__deterministic_text.json",
+      "request_plan_position": 282,
+      "sample_id": "pilot_142",
+      "sha256": "0118ca108c49946835209fc3293912ab32f92044f8697a77a4b485b39be8a6a6"
+    },
+    {
+      "condition": "structured",
+      "record_index": 141,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0141__structured.json",
+      "request_plan_position": 283,
+      "sample_id": "pilot_142",
+      "sha256": "46aebce8b08a4f8b2ff50a2906b16972afbd3a3a1522825cd8e274de5c24941f"
+    },
+    {
+      "condition": "structured",
+      "record_index": 142,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0142__structured.json",
+      "request_plan_position": 284,
+      "sample_id": "pilot_143",
+      "sha256": "3fa88d46d8d8fc7d1a488ab458a4a7c5bb062ee14bdae415e98cada123a1d1a2"
+    },
+    {
+      "condition": "deterministic_text",
+      "record_index": 142,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0142__deterministic_text.json",
+      "request_plan_position": 285,
+      "sample_id": "pilot_143",
+      "sha256": "dd6612ea38fe93450b12482d011a5b7937e9e1b2ab1f2327c4e579ece4b56643"
+    },
+    {
+      "condition": "deterministic_text",
+      "record_index": 143,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0143__deterministic_text.json",
+      "request_plan_position": 286,
+      "sample_id": "pilot_144",
+      "sha256": "ba5a025a9ca2b47d6b237e7a1befb0a35ac896baf28b1773a5ca8ac583b2d42d"
+    },
+    {
+      "condition": "structured",
+      "record_index": 143,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0143__structured.json",
+      "request_plan_position": 287,
+      "sample_id": "pilot_144",
+      "sha256": "2fb1baa6c26ac6e30cf7f8b8a7ea0c83406a8be48efa8d1d842397f322c5548a"
+    },
+    {
+      "condition": "structured",
+      "record_index": 144,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0144__structured.json",
+      "request_plan_position": 288,
+      "sample_id": "pilot_145",
+      "sha256": "994fb5dab2e2c0c5854f642552398e699bbba167b20c5c4201016c7e818f106c"
+    },
+    {
+      "condition": "deterministic_text",
+      "record_index": 144,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0144__deterministic_text.json",
+      "request_plan_position": 289,
+      "sample_id": "pilot_145",
+      "sha256": "b73c14c8a33acde5c01ca36247f1d9b6b017efc6f189c3d8d689bc9172529a41"
+    },
+    {
+      "condition": "deterministic_text",
+      "record_index": 145,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0145__deterministic_text.json",
+      "request_plan_position": 290,
+      "sample_id": "pilot_146",
+      "sha256": "31ce6bc9cd6e80465a1681dde8a64d14b9357150788445f2e92f0bd52d7c1d25"
+    },
+    {
+      "condition": "structured",
+      "record_index": 145,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0145__structured.json",
+      "request_plan_position": 291,
+      "sample_id": "pilot_146",
+      "sha256": "1fcf725212fa8fdf5f2f598253eddbc91deb08eb69c4a8a271d979c67ea81ae5"
+    },
+    {
+      "condition": "structured",
+      "record_index": 146,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0146__structured.json",
+      "request_plan_position": 292,
+      "sample_id": "pilot_147",
+      "sha256": "efa5dc2f522a95d3d665d46fff9bad355ecbf32ac4b3a68f163059dfbc46a911"
+    },
+    {
+      "condition": "deterministic_text",
+      "record_index": 146,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0146__deterministic_text.json",
+      "request_plan_position": 293,
+      "sample_id": "pilot_147",
+      "sha256": "916cac9a939bf04e2f4612da6286d4e7b8bb99272c16686f7c27c8b07d2bb143"
+    },
+    {
+      "condition": "deterministic_text",
+      "record_index": 147,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0147__deterministic_text.json",
+      "request_plan_position": 294,
+      "sample_id": "pilot_148",
+      "sha256": "67dd02f7ec4e3ee95f31a2247802d4fab7c9c85c1525c16336d91f8802488df4"
+    },
+    {
+      "condition": "structured",
+      "record_index": 147,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0147__structured.json",
+      "request_plan_position": 295,
+      "sample_id": "pilot_148",
+      "sha256": "2c137d4a058d78b8149f1aff75d9c23b158348000b3c43e6c07effad8ed6957c"
+    },
+    {
+      "condition": "structured",
+      "record_index": 148,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0148__structured.json",
+      "request_plan_position": 296,
+      "sample_id": "pilot_149",
+      "sha256": "cb1cad3f264057f4b6e8560a6d68e9518ea3e7adff10608b6a81361afe6d8c74"
+    },
+    {
+      "condition": "deterministic_text",
+      "record_index": 148,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0148__deterministic_text.json",
+      "request_plan_position": 297,
+      "sample_id": "pilot_149",
+      "sha256": "c997356f38a56948833a64ae8730ff5cf770de52599b6f430d24af96733d2893"
+    },
+    {
+      "condition": "deterministic_text",
+      "record_index": 149,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0149__deterministic_text.json",
+      "request_plan_position": 298,
+      "sample_id": "pilot_150",
+      "sha256": "8af6173cdf8085110fddf2eca487ff3e07e3e6a2ad25d48fb597228b9855c1ce"
+    },
+    {
+      "condition": "structured",
+      "record_index": 149,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0149__structured.json",
+      "request_plan_position": 299,
+      "sample_id": "pilot_150",
+      "sha256": "5bfac519cb4b306b5220a132750a813077534380c28b76a686e3e001d592a1af"
+    },
+    {
+      "condition": "structured",
+      "record_index": 150,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0150__structured.json",
+      "request_plan_position": 300,
+      "sample_id": "pilot_151",
+      "sha256": "7c44f327ec2ac4f45250ede61083b77a108ef430855db3fca9a7aaa73335b20d"
+    },
+    {
+      "condition": "deterministic_text",
+      "record_index": 150,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0150__deterministic_text.json",
+      "request_plan_position": 301,
+      "sample_id": "pilot_151",
+      "sha256": "44f80b202243c055a227f33d8bd7792045574a6d564a65f17ae3b25f114ea4e4"
+    },
+    {
+      "condition": "deterministic_text",
+      "record_index": 151,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0151__deterministic_text.json",
+      "request_plan_position": 302,
+      "sample_id": "pilot_152",
+      "sha256": "480431b33ff9c23a8d103748f0325e5b3ac0651228d20d0fb5bb7dc5a650a8f1"
+    },
+    {
+      "condition": "structured",
+      "record_index": 151,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0151__structured.json",
+      "request_plan_position": 303,
+      "sample_id": "pilot_152",
+      "sha256": "afc22ca2f0dbff477fc5fd65928d69f77152abb4b86aaf29285a32142198b6da"
+    },
+    {
+      "condition": "structured",
+      "record_index": 152,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0152__structured.json",
+      "request_plan_position": 304,
+      "sample_id": "pilot_153",
+      "sha256": "800d12be34f444dec5bd04a9d7bc81ef7d93080de2a8666da4d8604211d52c3a"
+    },
+    {
+      "condition": "deterministic_text",
+      "record_index": 152,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0152__deterministic_text.json",
+      "request_plan_position": 305,
+      "sample_id": "pilot_153",
+      "sha256": "76b34087b13087cdd44bda21a9903c7c09c51a8e5ac9f967c801ed97e025f485"
+    },
+    {
+      "condition": "deterministic_text",
+      "record_index": 153,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0153__deterministic_text.json",
+      "request_plan_position": 306,
+      "sample_id": "pilot_154",
+      "sha256": "92d67a8249439e94e4df1efca39a001331e99dc84337de66e4ba47627eb3191e"
+    },
+    {
+      "condition": "structured",
+      "record_index": 153,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0153__structured.json",
+      "request_plan_position": 307,
+      "sample_id": "pilot_154",
+      "sha256": "86b72cced0ad9c70432ffa645034c5c8efc4379e6f9280efe0b6c33dbfa19188"
+    },
+    {
+      "condition": "structured",
+      "record_index": 154,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0154__structured.json",
+      "request_plan_position": 308,
+      "sample_id": "pilot_155",
+      "sha256": "bcf5852d59ae70465b43c987bf27707a13f77763c521deb58971d6dc380074be"
+    },
+    {
+      "condition": "deterministic_text",
+      "record_index": 154,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0154__deterministic_text.json",
+      "request_plan_position": 309,
+      "sample_id": "pilot_155",
+      "sha256": "e852a0a782133b04bce654c2e3a65b4c662510f5f0235b8ceb1943080466986a"
+    },
+    {
+      "condition": "deterministic_text",
+      "record_index": 155,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0155__deterministic_text.json",
+      "request_plan_position": 310,
+      "sample_id": "pilot_156",
+      "sha256": "d1a409b8d4d83a655784d95f9ac2da921b8031a8b32fd4f12de9294a9078d1f1"
+    },
+    {
+      "condition": "structured",
+      "record_index": 155,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0155__structured.json",
+      "request_plan_position": 311,
+      "sample_id": "pilot_156",
+      "sha256": "b60c8678065c81aa5073744f4ba46354fd9bdcc2d121f43ec091dee6777f7a28"
+    },
+    {
+      "condition": "structured",
+      "record_index": 156,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0156__structured.json",
+      "request_plan_position": 312,
+      "sample_id": "pilot_157",
+      "sha256": "79bb3649b569e73a86b200eae5f3abb710792efa73267627d5198ed8d13414d3"
+    },
+    {
+      "condition": "deterministic_text",
+      "record_index": 156,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0156__deterministic_text.json",
+      "request_plan_position": 313,
+      "sample_id": "pilot_157",
+      "sha256": "9211193f527f00382ebeafbd1f0d47f6b1ac0f4729965cd80fdbf22bda1aff2a"
+    },
+    {
+      "condition": "deterministic_text",
+      "record_index": 157,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0157__deterministic_text.json",
+      "request_plan_position": 314,
+      "sample_id": "pilot_158",
+      "sha256": "8fda90d36b3b1e6a8a1f5257ab2d5a5d4ffc2617da5316e0eae3836d1f90953e"
+    },
+    {
+      "condition": "structured",
+      "record_index": 157,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0157__structured.json",
+      "request_plan_position": 315,
+      "sample_id": "pilot_158",
+      "sha256": "622f408009cae1efce7e594f8c6dd89f127a2f53624c2ff29a04f10775ba6774"
+    },
+    {
+      "condition": "structured",
+      "record_index": 158,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0158__structured.json",
+      "request_plan_position": 316,
+      "sample_id": "pilot_159",
+      "sha256": "854fd8dbc3957dd9dab1d1fb4f97dff72593f55538937c8342130fef6295195d"
+    },
+    {
+      "condition": "deterministic_text",
+      "record_index": 158,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0158__deterministic_text.json",
+      "request_plan_position": 317,
+      "sample_id": "pilot_159",
+      "sha256": "ea0bbb6e6bac4eb970d4a324fac0a0c5bbcc497f5254bba12404ca7afcf175bb"
+    },
+    {
+      "condition": "deterministic_text",
+      "record_index": 159,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0159__deterministic_text.json",
+      "request_plan_position": 318,
+      "sample_id": "pilot_160",
+      "sha256": "06d24bdc0cf966a301a64bb4343dd7de071392ee05cef20eb81a508349c48c33"
+    },
+    {
+      "condition": "structured",
+      "record_index": 159,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0159__structured.json",
+      "request_plan_position": 319,
+      "sample_id": "pilot_160",
+      "sha256": "2c98abc4d0d7ecf8a9f029d0ba49e02c00e46791807153b991e97ac294d997e7"
+    },
+    {
+      "condition": "structured",
+      "record_index": 160,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0160__structured.json",
+      "request_plan_position": 320,
+      "sample_id": "pilot_161",
+      "sha256": "e8d8a76d82a97fa2e22540c7a0817e6331c00cdc95434cd8b5f9df709477a33f"
+    },
+    {
+      "condition": "deterministic_text",
+      "record_index": 160,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0160__deterministic_text.json",
+      "request_plan_position": 321,
+      "sample_id": "pilot_161",
+      "sha256": "4e7108f1143c7ddebdcc25b9ab8609e94c55527edcdd6b48064207bb82df57b1"
+    },
+    {
+      "condition": "deterministic_text",
+      "record_index": 161,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0161__deterministic_text.json",
+      "request_plan_position": 322,
+      "sample_id": "pilot_162",
+      "sha256": "c55e99ec6c8fccf45471039a0a8d08136c8e0000e77a29ada4932423b7cce313"
+    },
+    {
+      "condition": "structured",
+      "record_index": 161,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0161__structured.json",
+      "request_plan_position": 323,
+      "sample_id": "pilot_162",
+      "sha256": "0c969497114d5504719aed433f726e2b2cb39a960003b7d36806d7642b1aa733"
+    },
+    {
+      "condition": "structured",
+      "record_index": 162,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0162__structured.json",
+      "request_plan_position": 324,
+      "sample_id": "pilot_163",
+      "sha256": "a5fba9f7110bc16d54f6da2e6e145f6d4c7131b2b724695e2d0abf97471fdf09"
+    },
+    {
+      "condition": "deterministic_text",
+      "record_index": 162,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0162__deterministic_text.json",
+      "request_plan_position": 325,
+      "sample_id": "pilot_163",
+      "sha256": "8d9db313c4daba5b48869790d56fb3e97c95dfca89eae2c62ec7bcb92124af67"
+    },
+    {
+      "condition": "deterministic_text",
+      "record_index": 163,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0163__deterministic_text.json",
+      "request_plan_position": 326,
+      "sample_id": "pilot_164",
+      "sha256": "01875f26290b673822b6ed473586178003d56b87b1acd79c52a22b299f49a896"
+    },
+    {
+      "condition": "structured",
+      "record_index": 163,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0163__structured.json",
+      "request_plan_position": 327,
+      "sample_id": "pilot_164",
+      "sha256": "112a021860bb3ca499be4fd01517f2a2fcae52073bd690161aa39b06a0415400"
+    },
+    {
+      "condition": "structured",
+      "record_index": 164,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0164__structured.json",
+      "request_plan_position": 328,
+      "sample_id": "pilot_165",
+      "sha256": "4aa115a23b506b3b1e5dda06940f745a0bf7c1e683d1b354722579a6e98247fd"
+    },
+    {
+      "condition": "deterministic_text",
+      "record_index": 164,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0164__deterministic_text.json",
+      "request_plan_position": 329,
+      "sample_id": "pilot_165",
+      "sha256": "be86277473d01c1076c862555cb2a25a03599973e5bf59a0152756909e88ca93"
+    },
+    {
+      "condition": "deterministic_text",
+      "record_index": 165,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0165__deterministic_text.json",
+      "request_plan_position": 330,
+      "sample_id": "pilot_166",
+      "sha256": "e36c4481384d4c46fab34e436e81e5a50c30e98234615b02160013e04db76b54"
+    },
+    {
+      "condition": "structured",
+      "record_index": 165,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0165__structured.json",
+      "request_plan_position": 331,
+      "sample_id": "pilot_166",
+      "sha256": "5b32a17231a4f764f4f14e54341ed492931440f47131fd5d17c893c3e0b6cc39"
+    },
+    {
+      "condition": "structured",
+      "record_index": 166,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0166__structured.json",
+      "request_plan_position": 332,
+      "sample_id": "pilot_167",
+      "sha256": "42c5b1e2cd89a6d4870c3bced9560d772fa530953708ce4e89a55aa1fd9a8763"
+    },
+    {
+      "condition": "deterministic_text",
+      "record_index": 166,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0166__deterministic_text.json",
+      "request_plan_position": 333,
+      "sample_id": "pilot_167",
+      "sha256": "bdac20ecf03bf50bf63b2b244536e6d3c2fcd9d5b196045c509e1955e49ddae1"
+    },
+    {
+      "condition": "deterministic_text",
+      "record_index": 167,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0167__deterministic_text.json",
+      "request_plan_position": 334,
+      "sample_id": "pilot_168",
+      "sha256": "bb9a9c1494b8265f0a16fb925a2859b8be0661ceaba2c3e9c6abc99732164db7"
+    },
+    {
+      "condition": "structured",
+      "record_index": 167,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0167__structured.json",
+      "request_plan_position": 335,
+      "sample_id": "pilot_168",
+      "sha256": "50e313f75e802a830f9156c71fa7afd7937786ab24e721c615d41f89fa7bef40"
+    },
+    {
+      "condition": "structured",
+      "record_index": 168,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0168__structured.json",
+      "request_plan_position": 336,
+      "sample_id": "pilot_169",
+      "sha256": "52030e97a8590c838cafb0be3d7a38500beb18ccfb86ca7a4ff593a37700e30a"
+    },
+    {
+      "condition": "deterministic_text",
+      "record_index": 168,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0168__deterministic_text.json",
+      "request_plan_position": 337,
+      "sample_id": "pilot_169",
+      "sha256": "5e2853baf35d3f39e1976866ade87366a1dac39de443e54716f55769bc9e738b"
+    },
+    {
+      "condition": "deterministic_text",
+      "record_index": 169,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0169__deterministic_text.json",
+      "request_plan_position": 338,
+      "sample_id": "pilot_170",
+      "sha256": "5893348f79c8401d240164e3bd445e25e002afe62dd9c3bbf0725d0820f124ca"
+    },
+    {
+      "condition": "structured",
+      "record_index": 169,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0169__structured.json",
+      "request_plan_position": 339,
+      "sample_id": "pilot_170",
+      "sha256": "2d3100134ea90047b98cd5f3e693c24e1883e60eb48c7ab90640c8a8181e87b6"
+    },
+    {
+      "condition": "structured",
+      "record_index": 170,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0170__structured.json",
+      "request_plan_position": 340,
+      "sample_id": "pilot_171",
+      "sha256": "e2f7056b2c36f97a031b91ec2cd52404c7dce07758aa8b011bdde97e6e301b9d"
+    },
+    {
+      "condition": "deterministic_text",
+      "record_index": 170,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0170__deterministic_text.json",
+      "request_plan_position": 341,
+      "sample_id": "pilot_171",
+      "sha256": "a4811add7fc5fb0936336b2bd0e83281fa6054878bd42e79c16fa24a4306d293"
+    },
+    {
+      "condition": "deterministic_text",
+      "record_index": 171,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0171__deterministic_text.json",
+      "request_plan_position": 342,
+      "sample_id": "pilot_172",
+      "sha256": "edb12df083e0c9036ebbae064d77688e2361a7c51de86a596d7887d6aa1a217d"
+    },
+    {
+      "condition": "structured",
+      "record_index": 171,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0171__structured.json",
+      "request_plan_position": 343,
+      "sample_id": "pilot_172",
+      "sha256": "ae20b5fd486d4b45f1c623950d146f048aafebef0efee802c9659b989181de61"
+    },
+    {
+      "condition": "structured",
+      "record_index": 172,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0172__structured.json",
+      "request_plan_position": 344,
+      "sample_id": "pilot_173",
+      "sha256": "ad126d67c7816e551aa1f603b3c15d97dd9d17b144f24c4b69f9a04702ced6f8"
+    },
+    {
+      "condition": "deterministic_text",
+      "record_index": 172,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0172__deterministic_text.json",
+      "request_plan_position": 345,
+      "sample_id": "pilot_173",
+      "sha256": "d82c2a50b9436ba87d02586c258770fc9ec6ac4d74cb3d780f68b069127b180a"
+    },
+    {
+      "condition": "deterministic_text",
+      "record_index": 173,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0173__deterministic_text.json",
+      "request_plan_position": 346,
+      "sample_id": "pilot_174",
+      "sha256": "6eb3a49e4f712295471413fd838a250c18304ba87823711466625654cb85c12a"
+    },
+    {
+      "condition": "structured",
+      "record_index": 173,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0173__structured.json",
+      "request_plan_position": 347,
+      "sample_id": "pilot_174",
+      "sha256": "6fc56df795cb3bc27cefb397cd62112eeb686014baaf7ef14f2bddf3f4c848e0"
+    },
+    {
+      "condition": "structured",
+      "record_index": 174,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0174__structured.json",
+      "request_plan_position": 348,
+      "sample_id": "pilot_175",
+      "sha256": "cbd1b8b2496930df22b65892d66e69ae34f54a1f48d6238b05f9389bd1c1fa13"
+    },
+    {
+      "condition": "deterministic_text",
+      "record_index": 174,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0174__deterministic_text.json",
+      "request_plan_position": 349,
+      "sample_id": "pilot_175",
+      "sha256": "04fc99862f9adf31ddd9bb81b409f546d272e3a8427ba47d2787db721083723f"
+    },
+    {
+      "condition": "deterministic_text",
+      "record_index": 175,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0175__deterministic_text.json",
+      "request_plan_position": 350,
+      "sample_id": "pilot_176",
+      "sha256": "7dec93955b8895fa6258692c8a6ff28134a2c810e807d782959d5321a464619e"
+    },
+    {
+      "condition": "structured",
+      "record_index": 175,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0175__structured.json",
+      "request_plan_position": 351,
+      "sample_id": "pilot_176",
+      "sha256": "6fefcf61d8eeaf9c9385e8caadc28503bc66eff04f704fdc75ba7478bbedd186"
+    },
+    {
+      "condition": "structured",
+      "record_index": 176,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0176__structured.json",
+      "request_plan_position": 352,
+      "sample_id": "pilot_177",
+      "sha256": "0472d3a8f9bb58c6bd03c7e9d846959fdbf9fcf3509544fe1197accf2f02077f"
+    },
+    {
+      "condition": "deterministic_text",
+      "record_index": 176,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0176__deterministic_text.json",
+      "request_plan_position": 353,
+      "sample_id": "pilot_177",
+      "sha256": "561e181a4c03731de381fd9110498b976e0dbe2e74c62bfbd908dde329b09d9b"
+    },
+    {
+      "condition": "deterministic_text",
+      "record_index": 177,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0177__deterministic_text.json",
+      "request_plan_position": 354,
+      "sample_id": "pilot_178",
+      "sha256": "4b4cfcdad252e9048a4f6145cb27758cc1a735087eb93d4dfeaf11499efc92b6"
+    },
+    {
+      "condition": "structured",
+      "record_index": 177,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0177__structured.json",
+      "request_plan_position": 355,
+      "sample_id": "pilot_178",
+      "sha256": "438aa1839e9db576d0a88dc9866badc472d7824ec880cb107a77c580de803422"
+    },
+    {
+      "condition": "structured",
+      "record_index": 178,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0178__structured.json",
+      "request_plan_position": 356,
+      "sample_id": "pilot_179",
+      "sha256": "022bdb6152103b3f99eece29d4dd05dbbed79774e005976c406761c24604e3a5"
+    },
+    {
+      "condition": "deterministic_text",
+      "record_index": 178,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0178__deterministic_text.json",
+      "request_plan_position": 357,
+      "sample_id": "pilot_179",
+      "sha256": "4fb387bf921b79b0313eec1c00b63afea0ca4abfdc4b08af41abb738ae2bfd2b"
+    },
+    {
+      "condition": "deterministic_text",
+      "record_index": 179,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0179__deterministic_text.json",
+      "request_plan_position": 358,
+      "sample_id": "pilot_180",
+      "sha256": "308b347dfb914fd2fa31d2bcf1bffcfbfad30d8377905bdd0b9c21f4fa8cb06d"
+    },
+    {
+      "condition": "structured",
+      "record_index": 179,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0179__structured.json",
+      "request_plan_position": 359,
+      "sample_id": "pilot_180",
+      "sha256": "91cf800e08bd461abde261334e710ce936271b798f0a7e73dfdec0cb61bfccf5"
+    },
+    {
+      "condition": "structured",
+      "record_index": 180,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0180__structured.json",
+      "request_plan_position": 360,
+      "sample_id": "pilot_181",
+      "sha256": "b2243499f0425ff6bb38178a598150be545079544c9d17da6537e1aee967443c"
+    },
+    {
+      "condition": "deterministic_text",
+      "record_index": 180,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0180__deterministic_text.json",
+      "request_plan_position": 361,
+      "sample_id": "pilot_181",
+      "sha256": "81215d87c49826b628208f1ca27fbb6ecc794833fc53473b602245bdfc96be12"
+    },
+    {
+      "condition": "deterministic_text",
+      "record_index": 181,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0181__deterministic_text.json",
+      "request_plan_position": 362,
+      "sample_id": "pilot_182",
+      "sha256": "787ff5d01b51100ac774faf5f0dc20826d69bfbd68483770f89a105d27d146d8"
+    },
+    {
+      "condition": "structured",
+      "record_index": 181,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0181__structured.json",
+      "request_plan_position": 363,
+      "sample_id": "pilot_182",
+      "sha256": "b2290cb58ba4cfe5017fbeacfb28db15b1a533c64eb51e35ca877b528431db0f"
+    },
+    {
+      "condition": "structured",
+      "record_index": 182,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0182__structured.json",
+      "request_plan_position": 364,
+      "sample_id": "pilot_183",
+      "sha256": "a47f6f07fa2c663f43df1f8373d5163d55fec825063dbdcdc11001d3395baea2"
+    },
+    {
+      "condition": "deterministic_text",
+      "record_index": 182,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0182__deterministic_text.json",
+      "request_plan_position": 365,
+      "sample_id": "pilot_183",
+      "sha256": "fb46f5848d7b45a1061a3592a8347511bb48896be688c98c0b2eb6e29a96e981"
+    },
+    {
+      "condition": "deterministic_text",
+      "record_index": 183,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0183__deterministic_text.json",
+      "request_plan_position": 366,
+      "sample_id": "pilot_184",
+      "sha256": "205ec22e5776f899e4b480ce52d85d92e0182d9f190f5d10d765ccb5773cece4"
+    },
+    {
+      "condition": "structured",
+      "record_index": 183,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0183__structured.json",
+      "request_plan_position": 367,
+      "sample_id": "pilot_184",
+      "sha256": "1b030424a70406bb85313d71c765cc21b60748f81d4394eb90d937be38f3b719"
+    },
+    {
+      "condition": "structured",
+      "record_index": 184,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0184__structured.json",
+      "request_plan_position": 368,
+      "sample_id": "pilot_185",
+      "sha256": "aa837e7fa28e6844b7a1e884e6c6c70ad135b222aefbc6c68d4895f5785218ff"
+    },
+    {
+      "condition": "deterministic_text",
+      "record_index": 184,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0184__deterministic_text.json",
+      "request_plan_position": 369,
+      "sample_id": "pilot_185",
+      "sha256": "c2432ff4a2313af75a17b0d64dad1c8614cd71d4565a84780810968eeee5b84e"
+    },
+    {
+      "condition": "deterministic_text",
+      "record_index": 185,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0185__deterministic_text.json",
+      "request_plan_position": 370,
+      "sample_id": "pilot_186",
+      "sha256": "b23da4d09f9c787913d645cabc43a433865fd69b84c34757479b75ad79748b99"
+    },
+    {
+      "condition": "structured",
+      "record_index": 185,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0185__structured.json",
+      "request_plan_position": 371,
+      "sample_id": "pilot_186",
+      "sha256": "773c231ec8a28e03fc6f4f0c0f4f3ddd0e714aa986889d804069cc60e7c24aa8"
+    },
+    {
+      "condition": "structured",
+      "record_index": 186,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0186__structured.json",
+      "request_plan_position": 372,
+      "sample_id": "pilot_187",
+      "sha256": "7218f4a9d74f6d28f28f598762e53fd939cdecb52a1afa356d20ab5849680851"
+    },
+    {
+      "condition": "deterministic_text",
+      "record_index": 186,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0186__deterministic_text.json",
+      "request_plan_position": 373,
+      "sample_id": "pilot_187",
+      "sha256": "8cd9d1a20354eb9d8200dea472d7e184619ae9562bd155e298a0ca234327debc"
+    },
+    {
+      "condition": "deterministic_text",
+      "record_index": 187,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0187__deterministic_text.json",
+      "request_plan_position": 374,
+      "sample_id": "pilot_188",
+      "sha256": "e7dcbea0b91a74eb5e5e0a30bd05b6392e3902e37dafedf70b44e17385733f80"
+    },
+    {
+      "condition": "structured",
+      "record_index": 187,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0187__structured.json",
+      "request_plan_position": 375,
+      "sample_id": "pilot_188",
+      "sha256": "6d5577fb9e1e14428ea653f54a2ef5417d70578427028ca2d9d5fa5a74cbce62"
+    },
+    {
+      "condition": "structured",
+      "record_index": 188,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0188__structured.json",
+      "request_plan_position": 376,
+      "sample_id": "pilot_189",
+      "sha256": "d172746402663e256b0c71171fdbb68ea87ae8c74b7bdf4a497723bad88a2c0a"
+    },
+    {
+      "condition": "deterministic_text",
+      "record_index": 188,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0188__deterministic_text.json",
+      "request_plan_position": 377,
+      "sample_id": "pilot_189",
+      "sha256": "3c4b95f2da67ebe0635bc61eaff6ba6c8bf978989ee128c00fc17fa5cde1953c"
+    },
+    {
+      "condition": "deterministic_text",
+      "record_index": 189,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0189__deterministic_text.json",
+      "request_plan_position": 378,
+      "sample_id": "pilot_190",
+      "sha256": "567b6f27fa8aad8e6e839341230a77f6348a2e042b0e9e484f0cca9343926624"
+    },
+    {
+      "condition": "structured",
+      "record_index": 189,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0189__structured.json",
+      "request_plan_position": 379,
+      "sample_id": "pilot_190",
+      "sha256": "590b2fc9ab2d3015d322cd7f0ffa6af619766d5e5ad03edfae958352041709de"
+    },
+    {
+      "condition": "structured",
+      "record_index": 190,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0190__structured.json",
+      "request_plan_position": 380,
+      "sample_id": "pilot_191",
+      "sha256": "0fe8f99c9b70566c72feb09508a9dc59e5773578a0f3a6e6cd370c1e6a3dfaaf"
+    },
+    {
+      "condition": "deterministic_text",
+      "record_index": 190,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0190__deterministic_text.json",
+      "request_plan_position": 381,
+      "sample_id": "pilot_191",
+      "sha256": "18f26dc808196024fa675b1c465481e59a177afce38c95a6385d2720c6da349f"
+    },
+    {
+      "condition": "deterministic_text",
+      "record_index": 191,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0191__deterministic_text.json",
+      "request_plan_position": 382,
+      "sample_id": "pilot_192",
+      "sha256": "122f8256a2701e6d161f8a0e0d79eb6eb660e3408cd4028e2f3cabeb98c69940"
+    },
+    {
+      "condition": "structured",
+      "record_index": 191,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0191__structured.json",
+      "request_plan_position": 383,
+      "sample_id": "pilot_192",
+      "sha256": "896c86e7bc91e30a98ae1be6fa2c7ef7a32583324f3db2d58192f1bb932236d6"
+    },
+    {
+      "condition": "structured",
+      "record_index": 192,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0192__structured.json",
+      "request_plan_position": 384,
+      "sample_id": "pilot_193",
+      "sha256": "956df1a30fbf48dc98c259728ceb9d331030c12128a2e588702d39777c849324"
+    },
+    {
+      "condition": "deterministic_text",
+      "record_index": 192,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0192__deterministic_text.json",
+      "request_plan_position": 385,
+      "sample_id": "pilot_193",
+      "sha256": "b809b766bd388faacba0a2dc54c936f3b0bbfac4de4e3093b4de2cdf2b3d6bed"
+    },
+    {
+      "condition": "deterministic_text",
+      "record_index": 193,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0193__deterministic_text.json",
+      "request_plan_position": 386,
+      "sample_id": "pilot_194",
+      "sha256": "9391dc4540d1016e55986e0bf0683cdd3553f375a15c18795ed34ce6a770a780"
+    },
+    {
+      "condition": "structured",
+      "record_index": 193,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0193__structured.json",
+      "request_plan_position": 387,
+      "sample_id": "pilot_194",
+      "sha256": "5bcda9e3c18a22811ffa119b7d6deb2d68c0bb8ce79d7498cbb068e481c2c697"
+    },
+    {
+      "condition": "structured",
+      "record_index": 194,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0194__structured.json",
+      "request_plan_position": 388,
+      "sample_id": "pilot_195",
+      "sha256": "3d282fddb844eed2cb92ee32fe6bb4fe48bcd7afba5c423a001532ae89ac2346"
+    },
+    {
+      "condition": "deterministic_text",
+      "record_index": 194,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0194__deterministic_text.json",
+      "request_plan_position": 389,
+      "sample_id": "pilot_195",
+      "sha256": "098ea0f27d1a36ee632611f9328ff41e1f9eab800635614087c8e86f9faa639c"
+    },
+    {
+      "condition": "deterministic_text",
+      "record_index": 195,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0195__deterministic_text.json",
+      "request_plan_position": 390,
+      "sample_id": "pilot_196",
+      "sha256": "fc096f30f786bfc2ee6535bbc288422b3177cf1cad6ee81e0f63485a0cf69bd4"
+    },
+    {
+      "condition": "structured",
+      "record_index": 195,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0195__structured.json",
+      "request_plan_position": 391,
+      "sample_id": "pilot_196",
+      "sha256": "7e3ac95be6fd5a55262f4877cfeac1549f813d9736abec9ad923e6f14725d269"
+    },
+    {
+      "condition": "structured",
+      "record_index": 196,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0196__structured.json",
+      "request_plan_position": 392,
+      "sample_id": "pilot_197",
+      "sha256": "f80c77421d0fd8a6de66714401db9d6732ef253340ac522d1de2acc5917e8fed"
+    },
+    {
+      "condition": "deterministic_text",
+      "record_index": 196,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0196__deterministic_text.json",
+      "request_plan_position": 393,
+      "sample_id": "pilot_197",
+      "sha256": "880c06ee8996e6402d292da6792cfaa599f5682ae469fddcf7ab61c8924ac643"
+    },
+    {
+      "condition": "deterministic_text",
+      "record_index": 197,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0197__deterministic_text.json",
+      "request_plan_position": 394,
+      "sample_id": "pilot_198",
+      "sha256": "add28d056f19ccec7d7fe1eea635df4bd68be32b7c92ccb44ba5092db1ada8aa"
+    },
+    {
+      "condition": "structured",
+      "record_index": 197,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0197__structured.json",
+      "request_plan_position": 395,
+      "sample_id": "pilot_198",
+      "sha256": "002dccaac8931ea265d3860cee0dfd307735023245ba41f66177a98d8422cf05"
+    },
+    {
+      "condition": "structured",
+      "record_index": 198,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0198__structured.json",
+      "request_plan_position": 396,
+      "sample_id": "pilot_199",
+      "sha256": "bef295c2b471c491ded9d84e6bd09c90ff7b4825081bdb6c785a4a5b2ebb65b9"
+    },
+    {
+      "condition": "deterministic_text",
+      "record_index": 198,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0198__deterministic_text.json",
+      "request_plan_position": 397,
+      "sample_id": "pilot_199",
+      "sha256": "6e2b570762876d9b580cf090238cb58df2e3fde818214bf3dceb708e11c281e9"
+    },
+    {
+      "condition": "deterministic_text",
+      "record_index": 199,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0199__deterministic_text.json",
+      "request_plan_position": 398,
+      "sample_id": "pilot_200",
+      "sha256": "6cc899608ac3012a2afc4eaea364f7227f61d309f244aa4903a14423b06daca2"
+    },
+    {
+      "condition": "structured",
+      "record_index": 199,
+      "relative_path": "results/inference/primary_46/checkpoints/record_0199__structured.json",
+      "request_plan_position": 399,
+      "sample_id": "pilot_200",
+      "sha256": "e2722190585706a8f0ce38dc859bb0aa524449b10fc50c41c73bc921a17d828f"
+    }
+  ],
+  "checkpoint_inventory_sha256": "a8d1b51fe7f82afe35d3fd7381a518e650bc7f4f1c9cf2ce027396822f4ac09b",
+  "checkpoint_origin_counts": {
+    "formal_batch_execution": 390,
+    "paired_preflight": 2,
+    "reliability_execution": 8
+  },
+  "created_at_utc": "2026-09-04T01:26:24.958827+00:00",
+  "experiment_phase": "formal_batch_inference",
+  "feature_set": {
+    "feature_count": 46,
+    "id": "primary_46"
+  },
+  "locked_artifacts": {
+    "deterministic_text_jsonl": {
+      "relative_path": "data/interim/representations/primary_46/deterministic_text.jsonl",
+      "sha256": "e47549bc5c5ae08d170e46c43b223afdaae6d3aaef71064d0abea42f230b940d"
+    },
+    "equivalence_validation_csv": {
+      "relative_path": "data/interim/representations/primary_46/equivalence_validation.csv",
+      "sha256": "a3c036f068e2dcc2a502b25ac34c390daa6c20f0c0bcc30a41f1697d62c3c1fc"
+    },
+    "llm_output_schema": {
+      "relative_path": "configs/llm_output_schema.json",
+      "sha256": "1103a917ce1cad918ab4a94c5d94d8a0299400749ca9e03430c477e14b53831c"
+    },
+    "llm_protocol": {
+      "relative_path": "configs/llm_protocol_primary_46.json",
+      "sha256": "3ff01d1b7fa91f0b38d03a4324034e26e71c3288b74cd3c9a80e59f8a71e7c8d"
+    },
+    "reliability_manifest": {
+      "relative_path": "results/reliability/primary_46/opencode_reliability_manifest.json",
+      "sha256": "a3af39ed2123b22a8450bfd29b85de984d27ec8a16cd88ede62addd9efde7d0e"
+    },
+    "representation_manifest": {
+      "relative_path": "data/interim/representations/primary_46/manifest.json",
+      "sha256": "c653d611be838dc7dfb98b04ab22a390e61a38eed1c5ddf27694949a98a89661"
+    },
+    "structured_jsonl": {
+      "relative_path": "data/interim/representations/primary_46/structured.jsonl",
+      "sha256": "a74fdbb25e8d24fb9afd06d13982f19689a04685436a65b25587e84b7a767fa9"
+    }
+  },
+  "manifest_version": "0.1.0",
+  "paired_response_availability": {
+    "both_conditions_valid_count": 178,
+    "exactly_one_condition_valid_count": 3,
+    "neither_condition_valid_count": 19
+  },
+  "request_plan": {
+    "deterministic_text_first_pair_count": 100,
+    "deterministic_text_request_count": 200,
+    "paired_sample_count": 200,
+    "request_count": 400,
+    "reused_reliability_checkpoint_count": 10,
+    "sample_id_sent_to_model": false,
+    "structured_first_pair_count": 100,
+    "structured_request_count": 200
+  },
+  "response_status": {
+    "budget_exhausted_count": 0,
+    "by_condition": {
+      "deterministic_text": {
+        "budget_exhausted_count": 0,
+        "checkpoint_count": 200,
+        "grounding_valid_count": 180,
+        "invalid_response_count": 20,
+        "overall_response_valid_count": 180,
+        "request_completed_count": 181,
+        "schema_structure_valid_count": 180,
+        "timeout_count": 19,
+        "visible_json_parsed_count": 181
+      },
+      "structured": {
+        "budget_exhausted_count": 0,
+        "checkpoint_count": 200,
+        "grounding_valid_count": 179,
+        "invalid_response_count": 21,
+        "overall_response_valid_count": 179,
+        "request_completed_count": 179,
+        "schema_structure_valid_count": 179,
+        "timeout_count": 21,
+        "visible_json_parsed_count": 179
+      }
+    },
+    "checkpoint_count": 400,
+    "completed_but_invalid_count": 1,
+    "error_type_counts": {
+      "TimeoutExpired": 40
+    },
+    "execution_error_count": 40,
+    "invalid_response_count": 41,
+    "overall_response_valid_count": 359,
+    "request_completed_count": 360,
+    "schema_invalid_after_json_parse_count": 1
+  },
+  "results_artifact": {
+    "byte_count": 1466663,
+    "ordering": "request_plan_position_ascending",
+    "record_count": 400,
+    "relative_path": "results/inference/primary_46/opencode_batch_results.jsonl",
+    "sha256": "fdca52ad78ba136794e7a4a9d5bc684788edcdae180f9621ea95cced5dc97459"
+  },
+  "safety": {
+    "credentials_retained": false,
+    "ground_truth_loaded": false,
+    "ground_truth_path_defined": false,
+    "hidden_reasoning_retained": false,
+    "network_request_made_during_aggregation": false
+  }
+}
