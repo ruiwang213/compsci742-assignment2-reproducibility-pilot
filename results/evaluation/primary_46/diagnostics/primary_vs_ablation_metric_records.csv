@@ -1,0 +1,13 @@
+model,model_display,metric,metric_display,primary_46_estimate,without_dominant_feature_estimate,ablation_difference
+logistic_regression,Logistic Regression,accuracy,Accuracy,0.975,0.97,-0.0050000000000000044
+logistic_regression,Logistic Regression,precision,Precision,1.0,1.0,0.0
+logistic_regression,Logistic Regression,recall,Recall (sensitivity),0.95,0.94,-0.010000000000000009
+logistic_regression,Logistic Regression,f1,F1,0.9743589743589743,0.9690721649484536,-0.005286809410520732
+logistic_regression,Logistic Regression,specificity,Specificity,1.0,1.0,0.0
+logistic_regression,Logistic Regression,balanced_accuracy,Balanced accuracy,0.975,0.97,-0.0050000000000000044
+random_forest,Random Forest,accuracy,Accuracy,1.0,1.0,0.0
+random_forest,Random Forest,precision,Precision,1.0,1.0,0.0
+random_forest,Random Forest,recall,Recall (sensitivity),1.0,1.0,0.0
+random_forest,Random Forest,f1,F1,1.0,1.0,0.0
+random_forest,Random Forest,specificity,Specificity,1.0,1.0,0.0
+random_forest,Random Forest,balanced_accuracy,Balanced accuracy,1.0,1.0,0.0

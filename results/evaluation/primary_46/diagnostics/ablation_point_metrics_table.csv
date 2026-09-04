@@ -1,0 +1,3 @@
+model,model_display,analysis,feature_count,true_negative,false_positive,false_negative,true_positive,accuracy,precision,recall,f1,specificity,balanced_accuracy
+logistic_regression,Logistic Regression,post_hoc_without_MIN_IP_PKT_LEN,45,100,0,6,94,0.97,1.0,0.94,0.9690721649484536,1.0,0.97
+random_forest,Random Forest,post_hoc_without_MIN_IP_PKT_LEN,45,100,0,0,100,1.0,1.0,1.0,1.0,1.0,1.0

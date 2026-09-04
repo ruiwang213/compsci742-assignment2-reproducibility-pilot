@@ -1,0 +1,2 @@
+analysis,analysis_population,complete_pair_count,benign_pair_count,dos_pair_count,structured_json_only_correct,deterministic_text_only_correct,discordant_pair_count,structured_json_accuracy,deterministic_text_accuracy,paired_accuracy_difference,test,p_value,alpha
+primary_paired_accuracy,complete_valid_response_pairs,178,92,86,28,14,42,0.5,0.42134831460674155,0.07865168539325845,exact_two_sided_mcnemar,0.043559,0.05

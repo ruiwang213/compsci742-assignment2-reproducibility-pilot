@@ -1,0 +1,5 @@
+correctness_pattern,sample_count
+both_correct,61
+structured_json_only_correct,28
+deterministic_text_only_correct,14
+both_incorrect,75

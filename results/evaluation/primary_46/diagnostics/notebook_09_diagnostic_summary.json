@@ -1,0 +1,67 @@
+{
+  "exact_duplicate_audit": {
+    "sample_count": 200,
+    "locked_predictor_count": 46,
+    "unique_exact_predictor_vector_count": 200,
+    "repeated_exact_predictor_group_count": 0,
+    "conflicting_label_exact_group_count": 0,
+    "cross_fold_exact_duplicate_group_count": 0,
+    "sample_identifier_used_as_predictor": false,
+    "ground_truth_used_as_predictor": false
+  },
+  "repeated_fold_observed_accuracy": {
+    "split_seeds": [
+      742,
+      743,
+      744
+    ],
+    "logistic_regression": [
+      0.975,
+      0.99,
+      0.995
+    ],
+    "random_forest": [
+      1.0,
+      1.0,
+      1.0
+    ]
+  },
+  "shuffled_label_negative_control": {
+    "logistic_regression_mean_accuracy": 0.4967,
+    "random_forest_mean_accuracy": 0.4883,
+    "negative_control_near_chance": true
+  },
+  "dominant_predictor": {
+    "feature_name": "MIN_IP_PKT_LEN",
+    "univariate_oof_balanced_accuracy": 1.0,
+    "dos_observed_values": [
+      0,
+      40,
+      45
+    ],
+    "benign_observed_values": [
+      52,
+      65,
+      73
+    ]
+  },
+  "post_hoc_45_feature_ablation": {
+    "removed_feature": "MIN_IP_PKT_LEN",
+    "logistic_regression_accuracy": 0.97,
+    "logistic_regression_recall": 0.94,
+    "random_forest_accuracy": 1.0,
+    "primary_46_analysis_modified": false
+  },
+  "threshold_free_oof_metrics": {
+    "logistic_regression": {
+      "roc_auc": 0.9886,
+      "average_precision": 0.9938,
+      "brier_score": 0.0171
+    },
+    "random_forest": {
+      "roc_auc": 1.0,
+      "average_precision": 1.0,
+      "brier_score": 0.0042
+    }
+  }
+}

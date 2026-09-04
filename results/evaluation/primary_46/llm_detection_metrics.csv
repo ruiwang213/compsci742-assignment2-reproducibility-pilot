@@ -1,0 +1,3 @@
+method,method_role,evaluation_design,sample_count,accuracy,precision,recall,f1,specificity,balanced_accuracy
+Structured JSON,primary_llm_condition,complete_pair_valid_response_analysis,178,0.5,0.4634146341463415,0.22093023255813954,0.2992125984251969,0.7608695652173914,0.4908998988877654
+Deterministic text,primary_llm_condition,complete_pair_valid_response_analysis,178,0.42134831460674155,0.34545454545454546,0.22093023255813954,0.2695035460992908,0.6086956521739131,0.4148129423660263

@@ -1,0 +1,15 @@
+index,value
+model,random_forest
+model_display,Random Forest
+analysis,post_hoc_without_MIN_IP_PKT_LEN
+feature_count,45
+true_negative,100
+false_positive,0
+false_negative,0
+true_positive,100
+accuracy,1.0
+precision,1.0
+recall,1.0
+f1,1.0
+specificity,1.0
+balanced_accuracy,1.0

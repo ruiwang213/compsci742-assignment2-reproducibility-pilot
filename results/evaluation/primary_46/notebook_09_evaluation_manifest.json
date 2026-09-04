@@ -1,0 +1,378 @@
+{
+  "manifest_type": "notebook_09_detection_evaluation",
+  "manifest_status": "final_integrity_gate_passed",
+  "created_utc": "2026-09-04T03:27:30.125109+00:00",
+  "project_root": "/Users/ruiwang/Developer/compsci742-rui-pilot",
+  "notebook_path": "/Users/ruiwang/Developer/compsci742-rui-pilot/notebooks/09_detection_evaluation.ipynb",
+  "notebook_sha256_at_export": "813bcb038c43f37bdc4882b054742ef6dd2550573e02e1c0449c22a8aaa75908",
+  "analysis_contract": {
+    "fixed_pilot_sample_count": 200,
+    "benign_sample_count": 100,
+    "dos_sample_count": 100,
+    "locked_primary_feature_count": 46,
+    "planned_llm_request_count": 400,
+    "valid_llm_response_count": 359,
+    "complete_pair_count": 178,
+    "complete_pair_benign_count": 92,
+    "complete_pair_dos_count": 86,
+    "baseline_model_count": 2,
+    "cross_validation_fold_count": 5,
+    "cross_validation_seed": 742,
+    "bootstrap_replicate_count": 10000,
+    "bootstrap_seed": 742,
+    "baseline_oof_sample_row_count": 200,
+    "baseline_oof_model_specific_prediction_count": 400
+  },
+  "primary_rq1_result": {
+    "structured_json_accuracy": 0.5,
+    "deterministic_text_accuracy": 0.42134831460674155,
+    "paired_accuracy_difference": 0.07865168539325845,
+    "paired_accuracy_bootstrap_95_ci": [
+      0.0112,
+      0.1461
+    ],
+    "mcnemar_exact_two_sided_p_value": 0.043559
+  },
+  "source_variables": {
+    "llm_metrics": "rq1_integrated_comparison_table",
+    "paired_metric_differences": "paired_metric_difference_table",
+    "baseline_metrics": "baseline_point_metrics_table",
+    "baseline_oof_predictions": "baseline_oof_prediction_table",
+    "diagnostic_variables": [
+      "ABLATION_CATEGORICAL_FEATURE_NAMES",
+      "ABLATION_FEATURE_NAMES",
+      "ABLATION_QUANTITATIVE_FEATURE_NAMES",
+      "DIAGNOSTIC_REPEAT_SEEDS",
+      "ablation_change_metric_order",
+      "ablation_figure_metrics",
+      "ablation_metric_records",
+      "ablation_oof_prediction_table",
+      "ablation_point_metrics_table",
+      "ablation_predictor_matrix",
+      "ablation_row",
+      "baseline_diagnostic_repeated_cv_table",
+      "baseline_diagnostic_stability_summary",
+      "baseline_duplicate_audit_summary",
+      "baseline_duplicate_audit_table",
+      "baseline_high_accuracy_diagnostic_summary",
+      "diagnostic_name_keywords",
+      "diagnostic_repeated_cv_records",
+      "dominant_predictor_ablation_summary",
+      "negative_control_results",
+      "primary_vs_ablation_metric_records",
+      "primary_vs_ablation_metric_table"
+    ]
+  },
+  "figure_discovery": {
+    "search_directories": [
+      "/Users/ruiwang/Developer/compsci742-rui-pilot/results/evaluation/primary_46/figures",
+      "/Users/ruiwang/Developer/compsci742-rui-pilot/results/evaluation/primary_46"
+    ],
+    "selection_rule": "Use the only matching file; where historical candidates exist, use the most recently modified matching file and record the candidate count."
+  },
+  "artifacts": [
+    {
+      "relative_path": "results/evaluation/primary_46/llm_detection_metrics.csv",
+      "absolute_path": "/Users/ruiwang/Developer/compsci742-rui-pilot/results/evaluation/primary_46/llm_detection_metrics.csv",
+      "size_bytes": 489,
+      "sha256": "6e2a3cbb148728bffba6253ba947dcbb0a451c10530eb4a59f6071c0349d8306"
+    },
+    {
+      "relative_path": "results/evaluation/primary_46/llm_paired_metric_differences.csv",
+      "absolute_path": "/Users/ruiwang/Developer/compsci742-rui-pilot/results/evaluation/primary_46/llm_paired_metric_differences.csv",
+      "size_bytes": 1795,
+      "sha256": "fc89bb858de90fabf38616b2b4ec9d402d20d58d43ebd68a83e0bc0fdcdcc8a1"
+    },
+    {
+      "relative_path": "results/evaluation/primary_46/llm_paired_correctness_summary.csv",
+      "absolute_path": "/Users/ruiwang/Developer/compsci742-rui-pilot/results/evaluation/primary_46/llm_paired_correctness_summary.csv",
+      "size_bytes": 134,
+      "sha256": "98a0eb0bd9e1da9044be8cc7aeb5c838c9fedb437cde13a307bd2d6d6ae73ec2"
+    },
+    {
+      "relative_path": "results/evaluation/primary_46/llm_paired_test_summary.csv",
+      "absolute_path": "/Users/ruiwang/Developer/compsci742-rui-pilot/results/evaluation/primary_46/llm_paired_test_summary.csv",
+      "size_bytes": 419,
+      "sha256": "56360eb7dccb3e001a7c92f534985c7575de8aea4b29778cdfed4fd9d9dafbd4"
+    },
+    {
+      "relative_path": "results/evaluation/primary_46/supporting_baseline_metrics.csv",
+      "absolute_path": "/Users/ruiwang/Developer/compsci742-rui-pilot/results/evaluation/primary_46/supporting_baseline_metrics.csv",
+      "size_bytes": 379,
+      "sha256": "3f1395a1a9f9754a40ca389a3842e67a7e70b990562a427e8059b3bf78701457"
+    },
+    {
+      "relative_path": "results/evaluation/primary_46/supporting_baseline_oof_predictions.csv",
+      "absolute_path": "/Users/ruiwang/Developer/compsci742-rui-pilot/results/evaluation/primary_46/supporting_baseline_oof_predictions.csv",
+      "size_bytes": 8852,
+      "sha256": "4dd189964b71c4f52cce8436566734cb9de2be98e1ca1105ccaca05e7c3c61bd"
+    },
+    {
+      "relative_path": "results/evaluation/primary_46/diagnostics/baseline_duplicate_audit_table.csv",
+      "absolute_path": "/Users/ruiwang/Developer/compsci742-rui-pilot/results/evaluation/primary_46/diagnostics/baseline_duplicate_audit_table.csv",
+      "size_bytes": 34046,
+      "sha256": "1637f2f617b1b8f451ac929722dcf421a284ea25751e00d178aec56ebf1456c3"
+    },
+    {
+      "relative_path": "results/evaluation/primary_46/diagnostics/baseline_duplicate_audit_summary.csv",
+      "absolute_path": "/Users/ruiwang/Developer/compsci742-rui-pilot/results/evaluation/primary_46/diagnostics/baseline_duplicate_audit_summary.csv",
+      "size_bytes": 368,
+      "sha256": "881f0438ee0f2be223d0062067a7185780020068b89a01f22d75b7216c5851d7"
+    },
+    {
+      "relative_path": "results/evaluation/primary_46/diagnostics/diagnostic_repeat_seeds.csv",
+      "absolute_path": "/Users/ruiwang/Developer/compsci742-rui-pilot/results/evaluation/primary_46/diagnostics/diagnostic_repeat_seeds.csv",
+      "size_bytes": 14,
+      "sha256": "4e20d990fd62d07cf471a2559064eaf9a5b128f743b34135e9266f257db3f472"
+    },
+    {
+      "relative_path": "results/evaluation/primary_46/diagnostics/diagnostic_repeated_cv_records.csv",
+      "absolute_path": "/Users/ruiwang/Developer/compsci742-rui-pilot/results/evaluation/primary_46/diagnostics/diagnostic_repeated_cv_records.csv",
+      "size_bytes": 1113,
+      "sha256": "5936cd2c6b9f2f77fde81966b994629f6a1089ac181aa2ba36ef4ead9fee78d1"
+    },
+    {
+      "relative_path": "results/evaluation/primary_46/diagnostics/baseline_diagnostic_repeated_cv_table.csv",
+      "absolute_path": "/Users/ruiwang/Developer/compsci742-rui-pilot/results/evaluation/primary_46/diagnostics/baseline_diagnostic_repeated_cv_table.csv",
+      "size_bytes": 1113,
+      "sha256": "5936cd2c6b9f2f77fde81966b994629f6a1089ac181aa2ba36ef4ead9fee78d1"
+    },
+    {
+      "relative_path": "results/evaluation/primary_46/diagnostics/baseline_diagnostic_stability_summary.csv",
+      "absolute_path": "/Users/ruiwang/Developer/compsci742-rui-pilot/results/evaluation/primary_46/diagnostics/baseline_diagnostic_stability_summary.csv",
+      "size_bytes": 685,
+      "sha256": "4fcb222afe110a816fc1c1f78a984188116ec297607449809a0f994bb2a796fc"
+    },
+    {
+      "relative_path": "results/evaluation/primary_46/diagnostics/negative_control_results.csv",
+      "absolute_path": "/Users/ruiwang/Developer/compsci742-rui-pilot/results/evaluation/primary_46/diagnostics/negative_control_results.csv",
+      "size_bytes": 668,
+      "sha256": "f953e578ff2890ad0ccefcf333ea61bea1fdcbe248d38f924b802c6f4db24563"
+    },
+    {
+      "relative_path": "results/evaluation/primary_46/diagnostics/baseline_high_accuracy_diagnostic_summary.csv",
+      "absolute_path": "/Users/ruiwang/Developer/compsci742-rui-pilot/results/evaluation/primary_46/diagnostics/baseline_high_accuracy_diagnostic_summary.csv",
+      "size_bytes": 634,
+      "sha256": "9f8aedb65f1127005ab2d202029db6140142a95a668d7928c53c3befeac7b474"
+    },
+    {
+      "relative_path": "results/evaluation/primary_46/diagnostics/ablation_feature_names.csv",
+      "absolute_path": "/Users/ruiwang/Developer/compsci742-rui-pilot/results/evaluation/primary_46/diagnostics/ablation_feature_names.csv",
+      "size_bytes": 783,
+      "sha256": "cadfa7c5076c959cb489f061eae0b15d47c72f13be663b768d53ae82b8d20e3f"
+    },
+    {
+      "relative_path": "results/evaluation/primary_46/diagnostics/ablation_quantitative_feature_names.csv",
+      "absolute_path": "/Users/ruiwang/Developer/compsci742-rui-pilot/results/evaluation/primary_46/diagnostics/ablation_quantitative_feature_names.csv",
+      "size_bytes": 636,
+      "sha256": "de61ab07dfe68ef4db3f301dd5dc67f9ac1f9c59717d66c3ab08ff102837a750"
+    },
+    {
+      "relative_path": "results/evaluation/primary_46/diagnostics/ablation_categorical_feature_names.csv",
+      "absolute_path": "/Users/ruiwang/Developer/compsci742-rui-pilot/results/evaluation/primary_46/diagnostics/ablation_categorical_feature_names.csv",
+      "size_bytes": 149,
+      "sha256": "af1acb45f427dfc4569284692487fb415896d045b0b9468c998fdc1753e0b15d"
+    },
+    {
+      "relative_path": "results/evaluation/primary_46/diagnostics/ablation_predictor_matrix.csv",
+      "absolute_path": "/Users/ruiwang/Developer/compsci742-rui-pilot/results/evaluation/primary_46/diagnostics/ablation_predictor_matrix.csv",
+      "size_bytes": 30622,
+      "sha256": "45fa5fe911323f7b05daa8d8a6d177d7aa247933fca2ee8811828ae21b336588"
+    },
+    {
+      "relative_path": "results/evaluation/primary_46/diagnostics/ablation_oof_prediction_table.csv",
+      "absolute_path": "/Users/ruiwang/Developer/compsci742-rui-pilot/results/evaluation/primary_46/diagnostics/ablation_oof_prediction_table.csv",
+      "size_bytes": 3290,
+      "sha256": "01e6632b23056886bfa997f330bdddff45af4ec68ca2fcb99f0461c3bad8f59d"
+    },
+    {
+      "relative_path": "results/evaluation/primary_46/diagnostics/ablation_metric_records.csv",
+      "absolute_path": "/Users/ruiwang/Developer/compsci742-rui-pilot/results/evaluation/primary_46/diagnostics/ablation_metric_records.csv",
+      "size_bytes": 387,
+      "sha256": "72b2152b65630a964fa7132ee0c01f16b21614f70b1da52c7604be9b03f4de30"
+    },
+    {
+      "relative_path": "results/evaluation/primary_46/diagnostics/ablation_point_metrics_table.csv",
+      "absolute_path": "/Users/ruiwang/Developer/compsci742-rui-pilot/results/evaluation/primary_46/diagnostics/ablation_point_metrics_table.csv",
+      "size_bytes": 387,
+      "sha256": "72b2152b65630a964fa7132ee0c01f16b21614f70b1da52c7604be9b03f4de30"
+    },
+    {
+      "relative_path": "results/evaluation/primary_46/diagnostics/primary_vs_ablation_metric_records.csv",
+      "absolute_path": "/Users/ruiwang/Developer/compsci742-rui-pilot/results/evaluation/primary_46/diagnostics/primary_vs_ablation_metric_records.csv",
+      "size_bytes": 1044,
+      "sha256": "6ba1aec5391ef09927c8694f041a4ca52bae6a0970b863cfcaae78505556dafb"
+    },
+    {
+      "relative_path": "results/evaluation/primary_46/diagnostics/ablation_row.csv",
+      "absolute_path": "/Users/ruiwang/Developer/compsci742-rui-pilot/results/evaluation/primary_46/diagnostics/ablation_row.csv",
+      "size_bytes": 271,
+      "sha256": "9412d04408d418e7ce3d994311305430c7feadc2b790b45607a5d42d24b67a3f"
+    },
+    {
+      "relative_path": "results/evaluation/primary_46/diagnostics/primary_vs_ablation_metric_table.csv",
+      "absolute_path": "/Users/ruiwang/Developer/compsci742-rui-pilot/results/evaluation/primary_46/diagnostics/primary_vs_ablation_metric_table.csv",
+      "size_bytes": 1044,
+      "sha256": "6ba1aec5391ef09927c8694f041a4ca52bae6a0970b863cfcaae78505556dafb"
+    },
+    {
+      "relative_path": "results/evaluation/primary_46/diagnostics/ablation_figure_metrics.csv",
+      "absolute_path": "/Users/ruiwang/Developer/compsci742-rui-pilot/results/evaluation/primary_46/diagnostics/ablation_figure_metrics.csv",
+      "size_bytes": 48,
+      "sha256": "cccf2912c41b7d40f944589efe0ad730c8c5e6cc56c79811515412e8e788615a"
+    },
+    {
+      "relative_path": "results/evaluation/primary_46/diagnostics/dominant_predictor_ablation_summary.csv",
+      "absolute_path": "/Users/ruiwang/Developer/compsci742-rui-pilot/results/evaluation/primary_46/diagnostics/dominant_predictor_ablation_summary.csv",
+      "size_bytes": 1018,
+      "sha256": "64628504d8ad26c840679ba3cff0d21a2ce0868ffa1e6c0527e61fc2d1ed83ae"
+    },
+    {
+      "relative_path": "results/evaluation/primary_46/diagnostics/ablation_change_metric_order.csv",
+      "absolute_path": "/Users/ruiwang/Developer/compsci742-rui-pilot/results/evaluation/primary_46/diagnostics/ablation_change_metric_order.csv",
+      "size_bytes": 61,
+      "sha256": "d0b03857261b5e746b564c4a2b5a68b8e89917f4d6db74ff8667a5a1b211199c"
+    },
+    {
+      "relative_path": "results/evaluation/primary_46/diagnostics/diagnostic_name_keywords.csv",
+      "absolute_path": "/Users/ruiwang/Developer/compsci742-rui-pilot/results/evaluation/primary_46/diagnostics/diagnostic_name_keywords.csv",
+      "size_bytes": 126,
+      "sha256": "c0a89ad7649411505cd7689fb475f25e214c7f5de51fb485a85c1db2e1df713d"
+    },
+    {
+      "relative_path": "results/evaluation/primary_46/diagnostics/notebook_09_diagnostic_summary.json",
+      "absolute_path": "/Users/ruiwang/Developer/compsci742-rui-pilot/results/evaluation/primary_46/diagnostics/notebook_09_diagnostic_summary.json",
+      "size_bytes": 1555,
+      "sha256": "0902e29ee72d347aefdf3ed7f100b247d5de21dea3d364d54b2bd46271dbf737"
+    }
+  ],
+  "figures": [
+    {
+      "figure_number": 1,
+      "png_path": "/Users/ruiwang/Developer/compsci742-rui-pilot/results/evaluation/primary_46/figures/figure_01_response_coverage.png",
+      "png_sha256": "2deabaeeeb081bb90d849c190e5bbcfcd4f341026af55f2d9c6742daf17ae90f",
+      "pdf_path": "/Users/ruiwang/Developer/compsci742-rui-pilot/results/evaluation/primary_46/figures/figure_01_response_coverage.pdf",
+      "pdf_sha256": "ae64cb7a79f854412d37d167e9901c7d4abced279fea7e427059220c957143d1"
+    },
+    {
+      "figure_number": 2,
+      "png_path": "/Users/ruiwang/Developer/compsci742-rui-pilot/results/evaluation/primary_46/figures/figure_02_condition_specific_confusion_matrices.png",
+      "png_sha256": "856dcb84b755fcf98234ccb1010aca0a5a9e3b807e17b026e9efc8e244ffa6d9",
+      "pdf_path": "/Users/ruiwang/Developer/compsci742-rui-pilot/results/evaluation/primary_46/figures/figure_02_condition_specific_confusion_matrices.pdf",
+      "pdf_sha256": "8e64acdad217aa54cf3ee8be66a3e0a18dde67027f995274e01c2ec6911b206d"
+    },
+    {
+      "figure_number": 3,
+      "png_path": "/Users/ruiwang/Developer/compsci742-rui-pilot/results/evaluation/primary_46/figures/figure_03_condition_specific_metrics_with_ci.png",
+      "png_sha256": "7f2689c7e056b7faaea030b411c4591d09c74c5c7ac78afdae9589fac1116fbe",
+      "pdf_path": "/Users/ruiwang/Developer/compsci742-rui-pilot/results/evaluation/primary_46/figures/figure_03_condition_specific_metrics_with_ci.pdf",
+      "pdf_sha256": "1058c1e9ce6c6186079ea44ea108352116929fea35456a90cde2ab20a9ba8f27"
+    },
+    {
+      "figure_number": 4,
+      "png_path": "/Users/ruiwang/Developer/compsci742-rui-pilot/results/evaluation/primary_46/figures/figure_04_paired_correctness_mcnemar.png",
+      "png_sha256": "30c7d18285f9b023541d5a358679404b3033be6ae126284e59374acb543f4681",
+      "pdf_path": "/Users/ruiwang/Developer/compsci742-rui-pilot/results/evaluation/primary_46/figures/figure_04_paired_correctness_mcnemar.pdf",
+      "pdf_sha256": "7190279c98dd8e076b89c1f7d3ef4886a0dca51df0e59ec79af906b0d4605779"
+    },
+    {
+      "figure_number": 5,
+      "png_path": "/Users/ruiwang/Developer/compsci742-rui-pilot/results/evaluation/primary_46/figures/figure_05_paired_metric_differences.png",
+      "png_sha256": "a8fe8957c5d3c499bc41cd786884ff471606c7d3d9d3ff6d4427a331c78febb9",
+      "pdf_path": "/Users/ruiwang/Developer/compsci742-rui-pilot/results/evaluation/primary_46/figures/figure_05_paired_metric_differences.pdf",
+      "pdf_sha256": "e862d429b950bb074a5368ab3ccfd5525ec2eab8f2daf4256671ed7fb604b6a1"
+    },
+    {
+      "figure_number": 6,
+      "png_path": "/Users/ruiwang/Developer/compsci742-rui-pilot/results/evaluation/primary_46/figures/figure_06_supporting_baseline_confusion_matrices.png",
+      "png_sha256": "bc737786840ccb957720d3dbe3f42c82a91700ab0bdd57fa3423b4e09c76fc42",
+      "pdf_path": "/Users/ruiwang/Developer/compsci742-rui-pilot/results/evaluation/primary_46/figures/figure_06_supporting_baseline_confusion_matrices.pdf",
+      "pdf_sha256": "787c57a2ea89a72e62056460c97bafab8d9bf6d44b990c9814d2c9b5576cddf1"
+    },
+    {
+      "figure_number": 7,
+      "png_path": "/Users/ruiwang/Developer/compsci742-rui-pilot/results/evaluation/primary_46/figures/figure_07_supporting_baseline_metrics_with_ci.png",
+      "png_sha256": "8c18115a5b8c552746931be08d29641fb7cca20722c1494a0f28fb550af00d59",
+      "pdf_path": "/Users/ruiwang/Developer/compsci742-rui-pilot/results/evaluation/primary_46/figures/figure_07_supporting_baseline_metrics_with_ci.pdf",
+      "pdf_sha256": "1266d8f7192c0fe449b612fb0c3c739b7fe0b86fb402e32fb4d7624668a763a4"
+    },
+    {
+      "figure_number": 8,
+      "png_path": "/Users/ruiwang/Developer/compsci742-rui-pilot/results/evaluation/primary_46/figures/figure_08_dominant_predictor_ablation_diagnostic.png",
+      "png_sha256": "234c079e1a888b21e67a7e268e14960a55d418acacf2a042b09c02fa2377f4b7",
+      "pdf_path": "/Users/ruiwang/Developer/compsci742-rui-pilot/results/evaluation/primary_46/figures/figure_08_dominant_predictor_ablation_diagnostic.pdf",
+      "pdf_sha256": "029a977b7546d83892a9cc5f1538bdbb1d034e6eaf160f2f32292010dee3e2ec"
+    },
+    {
+      "figure_number": 9,
+      "png_path": "/Users/ruiwang/Developer/compsci742-rui-pilot/results/evaluation/primary_46/figures/figure_09_supporting_baseline_roc_pr_curves.png",
+      "png_sha256": "573b12eed98b77a31106f35ac249e6b4414e8b3736de42b9ab6c6175ef8971e0",
+      "pdf_path": "/Users/ruiwang/Developer/compsci742-rui-pilot/results/evaluation/primary_46/figures/figure_09_supporting_baseline_roc_pr_curves.pdf",
+      "pdf_sha256": "3878ca2ba0f7e20f9105735a17a8814de033342a7f2b73e2580bb222f774ea09"
+    },
+    {
+      "figure_number": 10,
+      "png_path": "/Users/ruiwang/Developer/compsci742-rui-pilot/results/evaluation/primary_46/figures/figure_10_integrated_rq1_performance_summary.png",
+      "png_sha256": "76f4e9d0f069247e44d5482f925009e0242afdfb43c42c70f0db01becb5f277c",
+      "pdf_path": "/Users/ruiwang/Developer/compsci742-rui-pilot/results/evaluation/primary_46/figures/figure_10_integrated_rq1_performance_summary.pdf",
+      "pdf_sha256": "fc09f86ae1c02e8920f10664368cc4b066977a65684c2700d6358f7da864cb72"
+    }
+  ],
+  "models_refitted_by_export": false,
+  "predictions_modified_by_export": false,
+  "metrics_recalculated_by_export": false,
+  "existing_figures_modified_by_export": false,
+  "network_request_made": false,
+  "integrity_gate_completed": true,
+  "ready_for_notebook_10": true,
+  "oof_storage_contract": {
+    "format": "wide_one_row_per_sample",
+    "sample_row_count": 200,
+    "model_count": 2,
+    "model_specific_prediction_count": 400,
+    "columns": [
+      "sample_id",
+      "true_binary",
+      "cv_fold",
+      "logistic_regression_predicted_binary",
+      "logistic_regression_dos_probability",
+      "random_forest_predicted_binary",
+      "random_forest_dos_probability"
+    ]
+  },
+  "export_corrections": [
+    {
+      "correction": "Replaced an incorrectly selected 400-row LLM inference table with the confirmed 200-row baseline OOF table.",
+      "correct_source_variable": "baseline_oof_prediction_table",
+      "correct_file_shape": [
+        200,
+        7
+      ],
+      "models_refitted": false,
+      "predictions_regenerated": false,
+      "primary_metrics_modified": false
+    }
+  ],
+  "integrity_gate": {
+    "completed_utc": "2026-09-04T10:37:48.726030+00:00",
+    "check_count": 36,
+    "passed_check_count": 36,
+    "failed_check_count": 0,
+    "all_checks_passed": true
+  },
+  "models_refitted_by_correction_or_gate": false,
+  "predictions_regenerated_by_correction_or_gate": false,
+  "primary_metrics_modified_by_correction_or_gate": false,
+  "figures_modified_by_correction_or_gate": false,
+  "network_request_made_by_correction_or_gate": false,
+  "models_refitted_by_correction": false,
+  "predictions_regenerated_by_correction": false,
+  "metrics_recalculated_by_correction": false,
+  "figures_modified_by_correction": false,
+  "network_request_made_by_correction": false,
+  "models_refitted_by_finalisation": false,
+  "predictions_regenerated_by_finalisation": false,
+  "primary_metrics_modified_by_finalisation": false,
+  "figures_modified_by_finalisation": false,
+  "network_request_made_by_finalisation": false
+}

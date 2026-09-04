@@ -1,0 +1,11 @@
+index,value
+sample_count,200
+locked_predictor_count,46
+unique_exact_predictor_vector_count,200
+repeated_exact_predictor_group_count,0
+samples_in_repeated_exact_predictor_groups,0
+conflicting_label_exact_group_count,0
+cross_fold_exact_duplicate_group_count,0
+sample_identifier_used_as_predictor,False
+ground_truth_used_as_predictor,False
+duplicate_audit_completed,True
