@@ -495,9 +495,13 @@ This repository should be interpreted as a supplementary, independently reproduc
 
 The wider team study includes additional input representations, visual and multimodal experiments, domain-derived flag conditions, and multiclass attack-category evaluation that are not reproduced here.
 
-Results from this repository may be integrated into the final paper where they provide:
+## Results from this repository may be integrated into the final paper where they provide:
 
 * a controlled structured-JSON versus deterministic-text binary comparison;
 * a leakage-safe LR/RF binary benchmark;
 * a reproducible feature-attribution agreement analysis; and
 * a contingency analysis supporting the robustness and transparency of the wider project.
+
+* Feature-selection rationale
+
+The NF-UNSW-NB15-v3 NetFlow schema contained 53 candidate input fields. Seven fields were excluded before modelling, producing the final locked set of 46 features. FLOW_START_MILLISECONDS and FLOW_END_MILLISECONDS were excluded to reduce temporal leakage and dependence on dataset-specific collection periods. IPV4_SRC_ADDR and IPV4_DST_ADDR were excluded because these high-cardinality identifiers could allow models to memorise particular hosts or network environments rather than learn generalisable traffic behaviour. DNS_QUERY_ID was excluded because it is a transient request–response identifier without stable security meaning. Finally, SRC_TO_DST_SECOND_BYTES and DST_TO_SRC_SECOND_BYTES were removed to maintain consistency with the main experimental feature definition and because they are derived directional-rate variables that overlap with retained byte-count, duration, and throughput features. Label and Attack were retained only as outcome variables and were never provided as model inputs.
