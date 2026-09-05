@@ -1,0 +1,32 @@
+{
+  "analysis": "class_stratified_sample_mismatch_alignment_baseline",
+  "artifacts": [
+    {
+      "artifact_key": "results_csv",
+      "byte_size": 1850,
+      "relative_path": "results/explanation_alignment/primary_46/class_stratified_mismatch_alignment_results.csv",
+      "sha256": "5a77a2955731aec64f044e0e11feb06b95006568ec946e026560425f69e679c1"
+    },
+    {
+      "artifact_key": "figure_png",
+      "byte_size": 264722,
+      "relative_path": "results/explanation_alignment/primary_46/class_stratified_mismatch_alignment.png",
+      "sha256": "ac9a2c8032004ff6dd0b5261cf21cde56384665de46643647a9777d9d267dedc"
+    },
+    {
+      "artifact_key": "figure_pdf",
+      "byte_size": 33376,
+      "relative_path": "results/explanation_alignment/primary_46/class_stratified_mismatch_alignment.pdf",
+      "sha256": "035545ac60c43ecfb04db63fc38c55eef111a8c143e2c46fe4dc3f6017ce7b1e"
+    }
+  ],
+  "directional_alternative": "same-sample alignment exceeds strict within-class mismatch",
+  "feature_policy": "primary_46",
+  "models_refitted": false,
+  "multiplicity_method": "Holm correction across eight supporting tests",
+  "network_request_made": false,
+  "paired_sample_count": 178,
+  "permutation_count": 50000,
+  "random_seed": 742,
+  "self_matches_allowed_in_null": false
+}

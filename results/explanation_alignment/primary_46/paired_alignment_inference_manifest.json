@@ -1,0 +1,70 @@
+{
+  "artifact_family": "paired_llm_model_explanation_alignment",
+  "artifacts": [
+    {
+      "artifact_key": "feature_level_alignment_csv",
+      "byte_size": 634718,
+      "relative_path": "results/explanation_alignment/primary_46/paired_llm_model_alignment_feature_long.csv",
+      "sha256": "f6d313702c9e5a493adf84ba0c6717d11fa74eda831cc00932107d728065a5b4"
+    },
+    {
+      "artifact_key": "response_level_alignment_csv",
+      "byte_size": 262916,
+      "relative_path": "results/explanation_alignment/primary_46/paired_llm_model_alignment_summary.csv",
+      "sha256": "7c50f1f23f22b11ac1dcb839957521547356ed2b5269116f8029658543c3341b"
+    },
+    {
+      "artifact_key": "confirmatory_inference_csv",
+      "byte_size": 1439,
+      "relative_path": "results/explanation_alignment/primary_46/paired_alignment_confirmatory_inference.csv",
+      "sha256": "4bfedef409b0dbe306c29ef71152ab03d7fcd1ccde911dbf7e8f7f31b893420e"
+    },
+    {
+      "artifact_key": "effect_forest_png",
+      "byte_size": 306618,
+      "relative_path": "results/explanation_alignment/primary_46/paired_alignment_effect_forest.png",
+      "sha256": "4ba52dab9d5fdc391c64b0b53d514eaca2775fc513cc7ded5096e69ad780acb4"
+    },
+    {
+      "artifact_key": "effect_forest_pdf",
+      "byte_size": 34088,
+      "relative_path": "results/explanation_alignment/primary_46/paired_alignment_effect_forest.pdf",
+      "sha256": "04cd4a9d7849fb7c33ed105f192a34b48fa47d689d045721b8d2cf9d9a5e543d"
+    }
+  ],
+  "bootstrap_replicate_count": 20000,
+  "condition_count": 2,
+  "conditions": [
+    "deterministic_text",
+    "structured"
+  ],
+  "confidence_level": 0.95,
+  "confirmatory_metrics": [
+    "top_five_overlap_fraction",
+    "attribution_mass_coverage"
+  ],
+  "confirmatory_result_row_count": 4,
+  "difference_definition": "structured minus deterministic_text",
+  "familywise_alpha": 0.05,
+  "feature_level_row_count": 3560,
+  "feature_policy": "primary_46",
+  "models_refitted_during_export": false,
+  "multiplicity_method": "Holm family-wise error control",
+  "network_request_made_during_export": false,
+  "paired_sample_count": 178,
+  "permutation_replicate_count": 100000,
+  "random_seed": 742,
+  "reference_model_count": 2,
+  "reference_models": [
+    "logistic_regression",
+    "random_forest"
+  ],
+  "rejected_hypothesis_count": 0,
+  "response_reference_row_count": 712,
+  "software": {
+    "matplotlib": "3.11.1",
+    "pandas": "3.0.5",
+    "platform": "macOS-15.7.3-arm64-arm-64bit",
+    "python": "3.11.14"
+  }
+}
