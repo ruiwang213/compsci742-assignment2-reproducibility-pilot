@@ -15,8 +15,6 @@ It provides supplementary and contingency evidence for:
 * comparison with conventional tabular models; and
 * agreement between LLM-cited features and instance-level model attributions.
 
-This repository does **not** replace the main experiments conducted by Jack, Sampath, and the wider team. In particular, the team's visual, multimodal, flag-based, and multiclass experiments remain separate from this 46-feature supplementary pipeline.
-
 The computational workflow, statistical analyses, figures, manifests, and result inventories in this repository have been completed and verified.
 
 ---
